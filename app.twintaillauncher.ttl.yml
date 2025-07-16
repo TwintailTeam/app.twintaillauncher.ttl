@@ -73,6 +73,8 @@ modules:
       - type: git
         url: https://github.com/TwintailTeam/TwintailLauncher.git
         tag: ttl-v1.0.4
+      - type: file
+        path: app.twintaillauncher.ttl.metainfo.xml
       # These sources will auto update using git actions (same as package-lock.json)
       - node_sources.json
       - cargo_sources.json
