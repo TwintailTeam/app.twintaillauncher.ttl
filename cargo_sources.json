@@ -2,8 +2,8 @@
     {
         "type": "git",
         "url": "https://github.com/twintailteam/fischl-rs",
-        "commit": "c54cf13b0d9e22f131dfc925f6c9fafc096df001",
-        "dest": "flatpak-cargo/git/fischl-rs-c54cf13"
+        "commit": "6b5659ada610fd3f2afd61b82130c2fed57012ce",
+        "dest": "flatpak-cargo/git/fischl-rs-6b5659a"
     },
     {
         "type": "archive",
@@ -216,14 +216,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/async-compression/async-compression-0.4.26.crate",
-        "sha256": "937f41778d8baa0b8984a101f48ec5d2e5b0d23a3f9235b2066eef29c3472bb9",
-        "dest": "cargo/vendor/async-compression-0.4.26"
+        "url": "https://static.crates.io/crates/async-compression/async-compression-0.4.27.crate",
+        "sha256": "ddb939d66e4ae03cee6091612804ba446b12878410cfa17f785f4dd67d4014e8",
+        "dest": "cargo/vendor/async-compression-0.4.27"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"937f41778d8baa0b8984a101f48ec5d2e5b0d23a3f9235b2066eef29c3472bb9\", \"files\": {}}",
-        "dest": "cargo/vendor/async-compression-0.4.26",
+        "contents": "{\"package\": \"ddb939d66e4ae03cee6091612804ba446b12878410cfa17f785f4dd67d4014e8\", \"files\": {}}",
+        "dest": "cargo/vendor/async-compression-0.4.27",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -1711,7 +1711,7 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/fischl-rs-c54cf13/.\" \"cargo/vendor/fischl\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/fischl-rs-6b5659a/.\" \"cargo/vendor/fischl\""
         ]
     },
     {
@@ -5356,14 +5356,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/rustix/rustix-1.0.7.crate",
-        "sha256": "c71e83d6afe7ff64890ec6b71d6a69bb8a610ab78ce364b3352876bb4c801266",
-        "dest": "cargo/vendor/rustix-1.0.7"
+        "url": "https://static.crates.io/crates/rustix/rustix-1.0.8.crate",
+        "sha256": "11181fbabf243db407ef8df94a6ce0b2f9a733bd8be4ad02b4eda9602296cac8",
+        "dest": "cargo/vendor/rustix-1.0.8"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"c71e83d6afe7ff64890ec6b71d6a69bb8a610ab78ce364b3352876bb4c801266\", \"files\": {}}",
-        "dest": "cargo/vendor/rustix-1.0.7",
+        "contents": "{\"package\": \"11181fbabf243db407ef8df94a6ce0b2f9a733bd8be4ad02b4eda9602296cac8\", \"files\": {}}",
+        "dest": "cargo/vendor/rustix-1.0.8",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -8684,27 +8684,27 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/zbus/zbus-5.8.0.crate",
-        "sha256": "597f45e98bc7e6f0988276012797855613cd8269e23b5be62cc4e5d28b7e515d",
-        "dest": "cargo/vendor/zbus-5.8.0"
+        "url": "https://static.crates.io/crates/zbus/zbus-5.9.0.crate",
+        "sha256": "4bb4f9a464286d42851d18a605f7193b8febaf5b0919d71c6399b7b26e5b0aad",
+        "dest": "cargo/vendor/zbus-5.9.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"597f45e98bc7e6f0988276012797855613cd8269e23b5be62cc4e5d28b7e515d\", \"files\": {}}",
-        "dest": "cargo/vendor/zbus-5.8.0",
+        "contents": "{\"package\": \"4bb4f9a464286d42851d18a605f7193b8febaf5b0919d71c6399b7b26e5b0aad\", \"files\": {}}",
+        "dest": "cargo/vendor/zbus-5.9.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/zbus_macros/zbus_macros-5.8.0.crate",
-        "sha256": "e5c8e4e14dcdd9d97a98b189cd1220f30e8394ad271e8c987da84f73693862c2",
-        "dest": "cargo/vendor/zbus_macros-5.8.0"
+        "url": "https://static.crates.io/crates/zbus_macros/zbus_macros-5.9.0.crate",
+        "sha256": "ef9859f68ee0c4ee2e8cde84737c78e3f4c54f946f2a38645d0d4c7a95327659",
+        "dest": "cargo/vendor/zbus_macros-5.9.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"e5c8e4e14dcdd9d97a98b189cd1220f30e8394ad271e8c987da84f73693862c2\", \"files\": {}}",
-        "dest": "cargo/vendor/zbus_macros-5.8.0",
+        "contents": "{\"package\": \"ef9859f68ee0c4ee2e8cde84737c78e3f4c54f946f2a38645d0d4c7a95327659\", \"files\": {}}",
+        "dest": "cargo/vendor/zbus_macros-5.9.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {

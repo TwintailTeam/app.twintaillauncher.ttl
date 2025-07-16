@@ -19,6 +19,12 @@
         </p>
     </description>
     <releases>
+            <release version="1.0.4" date="2025-07-16">
+            <description>
+                <p>Resume downloads feature and optimizations</p>
+                <p>For further changelogs please visit github repository's latest release notes.</p>
+            </description>
+        </release>
         <release version="1.0.3" date="2025-07-14">
             <description>
                 <p>First flatpak release.</p>
@@ -53,7 +59,7 @@
     <metadata_license>0BSD</metadata_license>
     <project_license>GPL-3.0-only</project_license>
     <developer id="app.twintaillauncher.ttl">
-        <name>TwintailLauncher Team</name>
+        <name>TwintailTeam</name>
     </developer>
     <categories>
         <category>Utility</category>
