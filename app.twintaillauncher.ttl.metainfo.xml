@@ -19,6 +19,12 @@
         </p>
     </description>
     <releases>
+        <release version="1.0.5" date="2025-07-24">
+            <description>
+                <p>Follow symlinks properly everywhere, wuwa updating improvements, NVIDIA crash issues fixed and more!</p>
+                <p>For further changelogs please visit github repository's latest release notes.</p>
+            </description>
+        </release>
             <release version="1.0.4" date="2025-07-16">
             <description>
                 <p>Resume downloads feature and optimizations</p>
@@ -33,26 +39,29 @@
         </release>
     </releases>
     <url type="homepage">https://twintaillauncher.app</url>
+    <url type="bugtracker">https://github.com/TwintailTeam/TwintailLauncher/issues</url>
+    <url type="vcs-browser">https://github.com/TwintailTeam/TwintailLauncher</url>
+    <url type="contribute">https://github.com/TwintailTeam/TwintailLauncher</url>
     <screenshots>
         <screenshot type="default">
-            <image>https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic01.png</image>
-            <caption>Main window</caption>
+            <image type="source">https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic01.png</image>
+            <caption xml:lang="en">Main window</caption>
         </screenshot>
         <screenshot>
-            <image>https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic02.png</image>
-            <caption>Download in progress</caption>
+            <image type="source">https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic02.png</image>
+            <caption xml:lang="en">Download in progress</caption>
         </screenshot>
         <screenshot>
-            <image>https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic03.png</image>
-            <caption>Application settings</caption>
+            <image type="source">https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic03.png</image>
+            <caption xml:lang="en">Application settings</caption>
         </screenshot>
         <screenshot>
-            <image>https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic04.png</image>
-            <caption>Installation settings</caption>
+            <image type="source">https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic04.png</image>
+            <caption xml:lang="en">Installation settings</caption>
         </screenshot>
         <screenshot>
-            <image>https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic05.png</image>
-            <caption>Repositories and manifests settings</caption>
+            <image type="source">https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic05.png</image>
+            <caption xml:lang="en">Repositories and manifests settings</caption>
         </screenshot>
     </screenshots>
     <launchable type="desktop-id">app.twintaillauncher.ttl.desktop</launchable>
@@ -62,11 +71,12 @@
         <name>TwintailTeam</name>
     </developer>
     <categories>
+        <category>Game</category>
         <category>Utility</category>
     </categories>
     <content_rating type="oars-1.0" />
     <branding>
-        <color type="primary" scheme_preference="light">#ffffff</color>
-        <color type="primary" scheme_preference="dark">#000000</color>
+        <color type="primary" scheme_preference="light">#8f8f8f</color>
+        <color type="primary" scheme_preference="dark">#1F1F1F</color>
     </branding>
 </component>
