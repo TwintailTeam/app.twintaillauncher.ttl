@@ -19,6 +19,12 @@
         </p>
     </description>
     <releases>
+        <release version="1.0.6" date="2025-07-26">
+            <description>
+                <p>Fix game zip extraction, gamemode support, more UI QoL and more!</p>
+                <p>For further changelogs please visit github repository's latest release notes.</p>
+            </description>
+        </release>
         <release version="1.0.5" date="2025-07-24">
             <description>
                 <p>Follow symlinks properly everywhere, wuwa updating improvements, NVIDIA crash issues fixed and more!</p>
@@ -43,11 +49,11 @@
     <url type="vcs-browser">https://github.com/TwintailTeam/TwintailLauncher</url>
     <url type="contribute">https://github.com/TwintailTeam/TwintailLauncher</url>
     <screenshots>
-        <screenshot type="default">
+        <screenshot>
             <image type="source">https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic01.png</image>
             <caption xml:lang="en">Main window</caption>
         </screenshot>
-        <screenshot>
+        <screenshot type="default">
             <image type="source">https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic02.png</image>
             <caption xml:lang="en">Download in progress</caption>
         </screenshot>
@@ -63,6 +69,10 @@
             <image type="source">https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic05.png</image>
             <caption xml:lang="en">Repositories and manifests settings</caption>
         </screenshot>
+        <screenshot>
+            <image type="source">https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic06.png</image>
+            <caption xml:lang="en">Download page</caption>
+        </screenshot>
     </screenshots>
     <launchable type="desktop-id">app.twintaillauncher.ttl.desktop</launchable>
     <metadata_license>0BSD</metadata_license>
@@ -76,7 +86,7 @@
     </categories>
     <content_rating type="oars-1.0" />
     <branding>
-        <color type="primary" scheme_preference="light">#8f8f8f</color>
-        <color type="primary" scheme_preference="dark">#1F1F1F</color>
+        <color type="primary" scheme_preference="light">#94DC23</color>
+        <color type="primary" scheme_preference="dark">#8dc738</color>
     </branding>
 </component>
