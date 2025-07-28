@@ -18,6 +18,11 @@ finish-args:
   - --talk-name=org.freedesktop.FileChooser # Folder pickers
   - --talk-name=org.freedesktop.Notifications # Notifications for some reason dont show without
   - --allow=devel # Needed by wine
+  # https://docs.flatpak.org/en/latest/sandbox-permissions.html#external-drive-access
+  - --filesystem=/media # External drives, steamdeck and handhelds especially
+  - --filesystem=/run/media # External drives, steamdeck and handhelds especially
+  - --filesystem=/mnt # External drives, steamdeck and handhelds especially
+
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
   - org.freedesktop.Sdk.Extension.node20
@@ -74,7 +79,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/TwintailTeam/TwintailLauncher.git
-        tag: ttl-v1.0.6
+        tag: ttl-v1.0.7
       - type: file
         path: app.twintaillauncher.ttl.metainfo.xml
       - node_sources.json

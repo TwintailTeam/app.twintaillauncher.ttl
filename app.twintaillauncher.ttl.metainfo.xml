@@ -19,6 +19,12 @@
         </p>
     </description>
     <releases>
+        <release version="1.0.7" date="2025-07-28">
+            <description>
+                <p>Jadeite auto enable for games that need it, wuwa convinience env vars and alot more QoL</p>
+                <p>For further changelogs please visit github repository's latest release notes.</p>
+            </description>
+        </release>
         <release version="1.0.6" date="2025-07-26">
             <description>
                 <p>Fix game zip extraction, gamemode support, more UI QoL and more!</p>
@@ -48,6 +54,7 @@
     <url type="bugtracker">https://github.com/TwintailTeam/TwintailLauncher/issues</url>
     <url type="vcs-browser">https://github.com/TwintailTeam/TwintailLauncher</url>
     <url type="contribute">https://github.com/TwintailTeam/TwintailLauncher</url>
+    <url type="donation">https://paypal.me/tukandevofficial</url>
     <screenshots>
         <screenshot>
             <image type="source">https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic01.png</image>
@@ -86,7 +93,7 @@
     </categories>
     <content_rating type="oars-1.0" />
     <branding>
-        <color type="primary" scheme_preference="light">#94DC23</color>
-        <color type="primary" scheme_preference="dark">#8dc738</color>
+        <color type="primary" scheme_preference="light">#e8d9ff</color>
+        <color type="primary" scheme_preference="dark">#1a0826</color>
     </branding>
 </component>
