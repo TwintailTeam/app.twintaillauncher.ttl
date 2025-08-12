@@ -2,7 +2,7 @@
 <component type="desktop-application">
     <id>app.twintaillauncher.ttl</id>
     <name>Twintail Launcher</name>
-    <summary>Launcher for your anime games</summary>
+    <summary>Run anime games on linux</summary>
     <description>
         <p>
             Twintaillauncher (TTL) is a multi-platform launcher that brings mod support, quality-of-life improvements, and advanced features to a variety of anime-styled games.
@@ -19,6 +19,12 @@
         </p>
     </description>
     <releases>
+            <release version="1.0.8" date="2025-08-13">
+            <description>
+                <p>Big UI improvements, mangohud toggle, notify on failure of game launch, and many more!</p>
+                <p>For further changelogs please visit github repository's latest release notes.</p>
+            </description>
+        </release>
         <release version="1.0.7" date="2025-07-28">
             <description>
                 <p>Jadeite auto enable for games that need it, wuwa convinience env vars and alot more QoL</p>
@@ -94,6 +100,6 @@
     <content_rating type="oars-1.0" />
     <branding>
         <color type="primary" scheme_preference="light">#e8d9ff</color>
-        <color type="primary" scheme_preference="dark">#1a0826</color>
+        <color type="primary" scheme_preference="dark">#30203B</color>
     </branding>
 </component>
