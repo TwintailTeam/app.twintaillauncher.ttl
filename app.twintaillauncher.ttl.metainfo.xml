@@ -11,7 +11,7 @@
             TTL is an all-in-one tool for downloading, managing, and launching your favorite anime games. It’s designed with flexibility, ease of use, and customization in mind.
         </p>
         <p>
-            Supported games: Genshin Impact, Honkai: Star Rail, Honkai Impact 3rd, Zenless Zone Zero, Wuthering Waves, Punishing: Gray Raven.
+            Supported games: Genshin Impact, Honkai: Star Rail, Honkai Impact 3rd, Zenless Zone Zero, Wuthering Waves, Punishing: Gray Raven, AetherGazer
         </p>
         <p>
             Is TTL safe to use? Can I get banned?
@@ -19,6 +19,12 @@
         </p>
     </description>
     <releases>
+                <release version="1.1.0" date="2025-08-25">
+            <description>
+                <p>Even more upgrades to the UI, fps unlocking for hsr, wuwa, hi3, NEW GAME: AetherGazer supported, rewritten hoyo games downloader for actual normal download speeds.</p>
+                <p>For further changelogs please visit github repository's latest release notes.</p>
+            </description>
+        </release>
             <release version="1.0.8" date="2025-08-13">
             <description>
                 <p>Big UI improvements, mangohud toggle, notify on failure of game launch, and many more!</p>
