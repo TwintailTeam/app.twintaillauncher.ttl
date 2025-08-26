@@ -2,8 +2,8 @@
     {
         "type": "git",
         "url": "https://github.com/twintailteam/fischl-rs",
-        "commit": "80289a94aa0009246dab4983f0e0554628f99622",
-        "dest": "flatpak-cargo/git/fischl-rs-80289a9"
+        "commit": "273fa3566d8069d44dc5687b24f63ce2060d211d",
+        "dest": "flatpak-cargo/git/fischl-rs-273fa35"
     },
     {
         "type": "archive",
@@ -1828,7 +1828,7 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/fischl-rs-80289a9/.\" \"cargo/vendor/fischl\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/fischl-rs-273fa35/.\" \"cargo/vendor/fischl\""
         ]
     },
     {
@@ -6929,14 +6929,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/tauri/tauri-2.8.3.crate",
-        "sha256": "dcead52ec80df0e9e4be671c0f2596a1f3bd7b6b2c9418c1eb7dd737499ff4bd",
-        "dest": "cargo/vendor/tauri-2.8.3"
+        "url": "https://static.crates.io/crates/tauri/tauri-2.8.4.crate",
+        "sha256": "5d545ccf7b60dcd44e07c6fb5aeb09140966f0aabd5d2aa14a6821df7bc99348",
+        "dest": "cargo/vendor/tauri-2.8.4"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"dcead52ec80df0e9e4be671c0f2596a1f3bd7b6b2c9418c1eb7dd737499ff4bd\", \"files\": {}}",
-        "dest": "cargo/vendor/tauri-2.8.3",
+        "contents": "{\"package\": \"5d545ccf7b60dcd44e07c6fb5aeb09140966f0aabd5d2aa14a6821df7bc99348\", \"files\": {}}",
+        "dest": "cargo/vendor/tauri-2.8.4",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -7072,14 +7072,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/tauri-runtime-wry/tauri-runtime-wry-2.8.0.crate",
-        "sha256": "5bb0f10f831f75832ac74d14d98f701868f9a8adccef2c249b466cf70b607db9",
-        "dest": "cargo/vendor/tauri-runtime-wry-2.8.0"
+        "url": "https://static.crates.io/crates/tauri-runtime-wry/tauri-runtime-wry-2.8.1.crate",
+        "sha256": "c1fe9d48bd122ff002064e88cfcd7027090d789c4302714e68fcccba0f4b7807",
+        "dest": "cargo/vendor/tauri-runtime-wry-2.8.1"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"5bb0f10f831f75832ac74d14d98f701868f9a8adccef2c249b466cf70b607db9\", \"files\": {}}",
-        "dest": "cargo/vendor/tauri-runtime-wry-2.8.0",
+        "contents": "{\"package\": \"c1fe9d48bd122ff002064e88cfcd7027090d789c4302714e68fcccba0f4b7807\", \"files\": {}}",
+        "dest": "cargo/vendor/tauri-runtime-wry-2.8.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -9308,14 +9308,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/wry/wry-0.53.1.crate",
-        "sha256": "5698e50a589268aec06d2219f48b143222f7b5ad9aa690118b8dce0a8dcac574",
-        "dest": "cargo/vendor/wry-0.53.1"
+        "url": "https://static.crates.io/crates/wry/wry-0.53.2.crate",
+        "sha256": "e3b6763512fe4b51c80b3ce9b50939d682acb4de335dfabbdb20d7a2642199b7",
+        "dest": "cargo/vendor/wry-0.53.2"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"5698e50a589268aec06d2219f48b143222f7b5ad9aa690118b8dce0a8dcac574\", \"files\": {}}",
-        "dest": "cargo/vendor/wry-0.53.1",
+        "contents": "{\"package\": \"e3b6763512fe4b51c80b3ce9b50939d682acb4de335dfabbdb20d7a2642199b7\", \"files\": {}}",
+        "dest": "cargo/vendor/wry-0.53.2",
         "dest-filename": ".cargo-checksum.json"
     },
     {
