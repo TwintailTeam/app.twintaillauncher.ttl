@@ -19,7 +19,13 @@
         </p>
     </description>
     <releases>
-                <release version="1.1.0" date="2025-08-25">
+        <release version="1.1.2" date="2025-09-01">
+            <description>
+                <p>Fully fix sophon downloading, mangohud config file option, ability to launch games directly by making shortcuts.</p>
+                <p>For further changelogs please visit github repository's latest release notes.</p>
+            </description>
+        </release>
+        <release version="1.1.0" date="2025-08-25">
             <description>
                 <p>Even more upgrades to the UI, fps unlocking for hsr, wuwa, hi3, NEW GAME: AetherGazer supported, rewritten hoyo games downloader for actual normal download speeds.</p>
                 <p>For further changelogs please visit github repository's latest release notes.</p>
@@ -78,7 +84,7 @@
         </screenshot>
         <screenshot>
             <image type="source">https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic03.png</image>
-            <caption xml:lang="en">Application settings</caption>
+            <caption xml:lang="en">Download resume showcase</caption>
         </screenshot>
         <screenshot>
             <image type="source">https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic04.png</image>
@@ -86,11 +92,11 @@
         </screenshot>
         <screenshot>
             <image type="source">https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic05.png</image>
-            <caption xml:lang="en">Repositories and manifests settings</caption>
+            <caption xml:lang="en">Application settings</caption>
         </screenshot>
         <screenshot>
             <image type="source">https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic06.png</image>
-            <caption xml:lang="en">Download page</caption>
+            <caption xml:lang="en">Repositories and manifests list</caption>
         </screenshot>
     </screenshots>
     <launchable type="desktop-id">app.twintaillauncher.ttl.desktop</launchable>
