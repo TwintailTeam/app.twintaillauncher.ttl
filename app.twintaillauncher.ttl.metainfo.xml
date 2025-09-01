@@ -19,6 +19,12 @@
         </p>
     </description>
     <releases>
+            <release version="1.1.3" date="2025-09-01">
+            <description>
+                <p>urgent hotfix release for flatpak crashes!</p>
+                <p>For further changelogs please visit github repository's latest release notes.</p>
+            </description>
+        </release>
         <release version="1.1.2" date="2025-09-01">
             <description>
                 <p>Fully fix sophon downloading, mangohud config file option, ability to launch games directly by making shortcuts.</p>

@@ -2,8 +2,8 @@
     {
         "type": "git",
         "url": "https://github.com/twintailteam/fischl-rs",
-        "commit": "f10c1b781943810d1acd02f6928482cb0e7d0731",
-        "dest": "flatpak-cargo/git/fischl-rs-f10c1b7"
+        "commit": "556529419a2d446ff08614daab19db439d6091c4",
+        "dest": "flatpak-cargo/git/fischl-rs-5565294"
     },
     {
         "type": "archive",
@@ -749,14 +749,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/cc/cc-1.2.34.crate",
-        "sha256": "42bc4aea80032b7bf409b0bc7ccad88853858911b7713a8062fdc0623867bedc",
-        "dest": "cargo/vendor/cc-1.2.34"
+        "url": "https://static.crates.io/crates/cc/cc-1.2.35.crate",
+        "sha256": "590f9024a68a8c40351881787f1934dc11afd69090f5edb6831464694d836ea3",
+        "dest": "cargo/vendor/cc-1.2.35"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"42bc4aea80032b7bf409b0bc7ccad88853858911b7713a8062fdc0623867bedc\", \"files\": {}}",
-        "dest": "cargo/vendor/cc-1.2.34",
+        "contents": "{\"package\": \"590f9024a68a8c40351881787f1934dc11afd69090f5edb6831464694d836ea3\", \"files\": {}}",
+        "dest": "cargo/vendor/cc-1.2.35",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -1334,14 +1334,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/deranged/deranged-0.4.0.crate",
-        "sha256": "9c9e6a11ca8224451684bc0d7d5a7adbf8f2fd6887261a1cfc3c0432f9d4068e",
-        "dest": "cargo/vendor/deranged-0.4.0"
+        "url": "https://static.crates.io/crates/deranged/deranged-0.5.3.crate",
+        "sha256": "d630bccd429a5bb5a64b5e94f693bfc48c9f8566418fda4c494cc94f911f87cc",
+        "dest": "cargo/vendor/deranged-0.5.3"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"9c9e6a11ca8224451684bc0d7d5a7adbf8f2fd6887261a1cfc3c0432f9d4068e\", \"files\": {}}",
-        "dest": "cargo/vendor/deranged-0.4.0",
+        "contents": "{\"package\": \"d630bccd429a5bb5a64b5e94f693bfc48c9f8566418fda4c494cc94f911f87cc\", \"files\": {}}",
+        "dest": "cargo/vendor/deranged-0.5.3",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -1826,14 +1826,27 @@
         "dest-filename": ".cargo-checksum.json"
     },
     {
+        "type": "archive",
+        "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/find-msvc-tools/find-msvc-tools-0.1.0.crate",
+        "sha256": "e178e4fba8a2726903f6ba98a6d221e76f9c12c650d5dc0e6afdc50677b49650",
+        "dest": "cargo/vendor/find-msvc-tools-0.1.0"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"e178e4fba8a2726903f6ba98a6d221e76f9c12c650d5dc0e6afdc50677b49650\", \"files\": {}}",
+        "dest": "cargo/vendor/find-msvc-tools-0.1.0",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/fischl-rs-f10c1b7/.\" \"cargo/vendor/fischl\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/fischl-rs-5565294/.\" \"cargo/vendor/fischl\""
         ]
     },
     {
         "type": "inline",
-        "contents": "[package]\nname = \"fischl\"\ndescription = \"Helper library to manage compatibility and downloads for KeqingLauncher\"\nauthors = [ \"TukanDev\",]\nversion = \"0.1.0\"\nedition = \"2024\"\n\n[build-dependencies]\nprost-build = \"0.14\"\nprotoc-bin-vendored = \"3\"\n\n[dependencies]\nreqwest-middleware = \"0.4\"\nreqwest-retry = \"0.7\"\nsysinfo = \"0.36\"\nserde_json = \"1.0.140\"\nthiserror = \"1.0\"\nfutures-util = \"0.3\"\nfutures = \"0.3\"\n\n[features]\ncompat = [ \"dep:wincompatlib\",]\ndownload = [ \"dep:zip\", \"dep:tar\", \"dep:flate2\", \"dep:liblzma\", \"dep:zstd\", \"dep:chksum-md5\", \"dep:prost\", \"dep:crossbeam-deque\",]\ndefault = [ \"download\",]\n\n[dependencies.serde]\nversion = \"1\"\nfeatures = [ \"derive\",]\n\n[dependencies.reqwest]\nversion = \"0.12\"\nfeatures = [ \"blocking\", \"json\", \"stream\",]\n\n[dependencies.chksum-md5]\nversion = \"0.1.0\"\nfeatures = [ \"async-runtime-tokio\",]\noptional = true\n\n[dependencies.prost]\nversion = \"0.14\"\nfeatures = []\noptional = true\n\n[dependencies.tokio]\nversion = \"1.45\"\nfeatures = [ \"macros\",]\n\n[dependencies.zip]\nversion = \"4.2.0\"\ndefault-features = false\nfeatures = [ \"deflate\",]\noptional = true\n\n[dependencies.tar]\nversion = \"0.4.44\"\noptional = true\n\n[dependencies.flate2]\nversion = \"1.1.2\"\ndefault-features = false\nfeatures = [ \"zlib-rs\",]\noptional = true\n\n[dependencies.liblzma]\nversion = \"0.4.2\"\nfeatures = [ \"static\",]\noptional = true\n\n[dependencies.zstd]\nversion = \"0.13.3\"\noptional = true\n\n[dependencies.crossbeam-deque]\nversion = \"0.8.6\"\noptional = true\n\n[target.\"cfg(target_os = \\\"linux\\\")\".dependencies.wincompatlib]\nversion = \"0.7.7\"\nfeatures = [ \"all\",]\noptional = true\n",
+        "contents": "[package]\nname = \"fischl\"\ndescription = \"Helper library to manage compatibility and downloads for KeqingLauncher\"\nauthors = [ \"TukanDev\",]\nversion = \"0.1.0\"\nedition = \"2024\"\n\n[build-dependencies]\nprost-build = \"0.14\"\nprotoc-bin-vendored = \"3\"\n\n[dependencies]\nreqwest-middleware = \"0.4\"\nreqwest-retry = \"0.7\"\nsysinfo = \"0.36\"\nserde_json = \"1.0\"\nthiserror = \"1.0\"\nfutures-util = \"0.3\"\nfutures = \"0.3\"\n\n[features]\ncompat = [ \"dep:wincompatlib\",]\ndownload = [ \"dep:zip\", \"dep:tar\", \"dep:flate2\", \"dep:liblzma\", \"dep:zstd\", \"dep:chksum-md5\", \"dep:prost\", \"dep:crossbeam-deque\",]\ndefault = [ \"download\",]\n\n[dependencies.serde]\nversion = \"1\"\nfeatures = [ \"derive\",]\n\n[dependencies.reqwest]\nversion = \"0.12\"\nfeatures = [ \"blocking\", \"json\", \"stream\", \"native-tls-vendored\",]\n\n[dependencies.chksum-md5]\nversion = \"0.1.0\"\nfeatures = [ \"async-runtime-tokio\",]\noptional = true\n\n[dependencies.prost]\nversion = \"0.14\"\nfeatures = []\noptional = true\n\n[dependencies.tokio]\nversion = \"1.45\"\nfeatures = [ \"macros\",]\n\n[dependencies.zip]\nversion = \"4.2.0\"\ndefault-features = false\nfeatures = [ \"deflate\",]\noptional = true\n\n[dependencies.tar]\nversion = \"0.4.44\"\noptional = true\n\n[dependencies.flate2]\nversion = \"1.1.2\"\ndefault-features = false\nfeatures = [ \"zlib-rs\",]\noptional = true\n\n[dependencies.liblzma]\nversion = \"0.4.2\"\nfeatures = [ \"static\",]\noptional = true\n\n[dependencies.zstd]\nversion = \"0.13.3\"\noptional = true\n\n[dependencies.crossbeam-deque]\nversion = \"0.8.6\"\noptional = true\n\n[target.\"cfg(target_os = \\\"linux\\\")\".dependencies.wincompatlib]\nversion = \"0.7.7\"\nfeatures = [ \"all\",]\noptional = true\n",
         "dest": "cargo/vendor/fischl",
         "dest-filename": "Cargo.toml"
     },
@@ -4524,6 +4537,19 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/openssl-src/openssl-src-300.5.2+3.5.2.crate",
+        "sha256": "d270b79e2926f5150189d475bc7e9d2c69f9c4697b185fa917d5a32b792d21b4",
+        "dest": "cargo/vendor/openssl-src-300.5.2+3.5.2"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"d270b79e2926f5150189d475bc7e9d2c69f9c4697b185fa917d5a32b792d21b4\", \"files\": {}}",
+        "dest": "cargo/vendor/openssl-src-300.5.2+3.5.2",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/openssl-sys/openssl-sys-0.9.109.crate",
         "sha256": "90096e2e47630d78b7d1c20952dc621f957103f8bc2c8359ec81290d75238571",
         "dest": "cargo/vendor/openssl-sys-0.9.109"
@@ -6916,14 +6942,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/tao/tao-0.34.2.crate",
-        "sha256": "4daa814018fecdfb977b59a094df4bd43b42e8e21f88fddfc05807e6f46efaaf",
-        "dest": "cargo/vendor/tao-0.34.2"
+        "url": "https://static.crates.io/crates/tao/tao-0.34.3.crate",
+        "sha256": "959469667dbcea91e5485fc48ba7dd6023face91bb0f1a14681a70f99847c3f7",
+        "dest": "cargo/vendor/tao-0.34.3"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"4daa814018fecdfb977b59a094df4bd43b42e8e21f88fddfc05807e6f46efaaf\", \"files\": {}}",
-        "dest": "cargo/vendor/tao-0.34.2",
+        "contents": "{\"package\": \"959469667dbcea91e5485fc48ba7dd6023face91bb0f1a14681a70f99847c3f7\", \"files\": {}}",
+        "dest": "cargo/vendor/tao-0.34.3",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -7254,40 +7280,40 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/time/time-0.3.41.crate",
-        "sha256": "8a7619e19bc266e0f9c5e6686659d394bc57973859340060a69221e57dbc0c40",
-        "dest": "cargo/vendor/time-0.3.41"
+        "url": "https://static.crates.io/crates/time/time-0.3.42.crate",
+        "sha256": "8ca967379f9d8eb8058d86ed467d81d03e81acd45757e4ca341c24affbe8e8e3",
+        "dest": "cargo/vendor/time-0.3.42"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"8a7619e19bc266e0f9c5e6686659d394bc57973859340060a69221e57dbc0c40\", \"files\": {}}",
-        "dest": "cargo/vendor/time-0.3.41",
+        "contents": "{\"package\": \"8ca967379f9d8eb8058d86ed467d81d03e81acd45757e4ca341c24affbe8e8e3\", \"files\": {}}",
+        "dest": "cargo/vendor/time-0.3.42",
         "dest-filename": ".cargo-checksum.json"
     },
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/time-core/time-core-0.1.4.crate",
-        "sha256": "c9e9a38711f559d9e3ce1cdb06dd7c5b8ea546bc90052da6d06bb76da74bb07c",
-        "dest": "cargo/vendor/time-core-0.1.4"
+        "url": "https://static.crates.io/crates/time-core/time-core-0.1.5.crate",
+        "sha256": "a9108bb380861b07264b950ded55a44a14a4adc68b9f5efd85aafc3aa4d40a68",
+        "dest": "cargo/vendor/time-core-0.1.5"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"c9e9a38711f559d9e3ce1cdb06dd7c5b8ea546bc90052da6d06bb76da74bb07c\", \"files\": {}}",
-        "dest": "cargo/vendor/time-core-0.1.4",
+        "contents": "{\"package\": \"a9108bb380861b07264b950ded55a44a14a4adc68b9f5efd85aafc3aa4d40a68\", \"files\": {}}",
+        "dest": "cargo/vendor/time-core-0.1.5",
         "dest-filename": ".cargo-checksum.json"
     },
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/time-macros/time-macros-0.2.22.crate",
-        "sha256": "3526739392ec93fd8b359c8e98514cb3e8e021beb4e5f597b00a0221f8ed8a49",
-        "dest": "cargo/vendor/time-macros-0.2.22"
+        "url": "https://static.crates.io/crates/time-macros/time-macros-0.2.23.crate",
+        "sha256": "7182799245a7264ce590b349d90338f1c1affad93d2639aed5f8f69c090b334c",
+        "dest": "cargo/vendor/time-macros-0.2.23"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"3526739392ec93fd8b359c8e98514cb3e8e021beb4e5f597b00a0221f8ed8a49\", \"files\": {}}",
-        "dest": "cargo/vendor/time-macros-0.2.22",
+        "contents": "{\"package\": \"7182799245a7264ce590b349d90338f1c1affad93d2639aed5f8f69c090b334c\", \"files\": {}}",
+        "dest": "cargo/vendor/time-macros-0.2.23",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -9581,14 +9607,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/zip/zip-4.5.0.crate",
-        "sha256": "8835eb39822904d39cb19465de1159e05d371973f0c6df3a365ad50565ddc8b9",
-        "dest": "cargo/vendor/zip-4.5.0"
+        "url": "https://static.crates.io/crates/zip/zip-4.6.0.crate",
+        "sha256": "c034aa6c54f654df20e7dc3713bc51705c12f280748fb6d7f40f87c696623e34",
+        "dest": "cargo/vendor/zip-4.6.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"8835eb39822904d39cb19465de1159e05d371973f0c6df3a365ad50565ddc8b9\", \"files\": {}}",
-        "dest": "cargo/vendor/zip-4.5.0",
+        "contents": "{\"package\": \"c034aa6c54f654df20e7dc3713bc51705c12f280748fb6d7f40f87c696623e34\", \"files\": {}}",
+        "dest": "cargo/vendor/zip-4.6.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
