@@ -98,6 +98,7 @@ modules:
       - install -Dm755 src-tauri/target/release/resources/hpatchz /app/lib/twintaillauncher/resources/hpatchz
       - install -Dm755 src-tauri/target/release/resources/krpatchz /app/lib/twintaillauncher/resources/krpatchz
       - install -Dm755 src-tauri/target/release/resources/7zr /app/lib/twintaillauncher/resources/7zr
+      - install -Dm755 src-tauri/target/release/resources/hkrpg_patch.dll /app/lib/twintaillauncher/resources/hkrpg_patch.dll
       - install -Dm644 src-tauri/target/release/resources/mangohud_default.conf /app/lib/twintaillauncher/resources/mangohud_default.conf
       - install -Dm644 LICENSE /app/share/licenses/app.twintaillauncher.ttl/LICENSE
       - desktop-file-edit --set-icon=app.twintaillauncher.ttl /app/share/applications/app.twintaillauncher.ttl.desktop
