@@ -104,7 +104,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/TwintailTeam/TwintailLauncher.git
-        tag: ttl-v1.1.4
+        tag: ttl-v1.1.5
       - type: file
         path: app.twintaillauncher.ttl.metainfo.xml
       - node_sources.json
