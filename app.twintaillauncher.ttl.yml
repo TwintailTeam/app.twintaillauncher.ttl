@@ -18,11 +18,16 @@ finish-args:
   - --talk-name=org.freedesktop.FileChooser # Folder pickers
   - --talk-name=org.freedesktop.Notifications # Notifications for some reason dont show without
   - --allow=devel # Needed by wine
+  # Should fix steamdeck controler navigation (Taken from https://github.com/flathub/com.heroicgameslauncher.hgl/blob/master/com.heroicgameslauncher.hgl.yml)
+  - --filesystem=/run/udev:ro
+  # Should fix discord rich presence (Taken from https://github.com/flathub/com.heroicgameslauncher.hgl/blob/master/com.heroicgameslauncher.hgl.yml)
+  - --filesystem=xdg-run/app/com.discordapp.Discord:create
   # https://docs.flatpak.org/en/latest/sandbox-permissions.html#external-drive-access
   - --filesystem=/media # External drives, steamdeck and handhelds especially
   - --filesystem=/run/media # External drives, steamdeck and handhelds especially
   - --filesystem=/mnt # External drives, steamdeck and handhelds especially
-  - --env=GST_PLUGIN_SYSTEM_PATH=/app/lib32/gstreamer-1.0:/app/lib/gstreamer-1.0:/usr/lib/i386-linux-gnu/gstreamer-1.0:/usr/lib/x86_64-linux-gnu/gstreamer-1.0 # Some games will crash without
+  - --filesystem=~/.local/share/applications:rw # App can make .desktop file game shortcuts
+  - --env=GST_PLUGIN_SYSTEM_PATH=/app/lib32/gstreamer-1.0:/app/lib/gstreamer-1.0:/usr/lib/extensions/gstreamer-1.0:/usr/lib/extension/gstreamer-1.0:/usr/lib/i386-linux-gnu/gstreamer-1.0:/usr/lib/x86_64-linux-gnu/gstreamer-1.0 # Some games will crash without
 
 # These extensions are needed to prevent good chunk of supported games crashing with video playback
 add-extensions:
