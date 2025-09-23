@@ -2,8 +2,8 @@
     {
         "type": "git",
         "url": "https://github.com/twintailteam/fischl-rs",
-        "commit": "b3b8e10816748f5d83e4dda70eb7882b8f0966f9",
-        "dest": "flatpak-cargo/git/fischl-rs-b3b8e10"
+        "commit": "bd6ed57e127a77b359e53e0e4dbe0b8a0d26248f",
+        "dest": "flatpak-cargo/git/fischl-rs-bd6ed57"
     },
     {
         "type": "archive",
@@ -1828,12 +1828,12 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/fischl-rs-b3b8e10/.\" \"cargo/vendor/fischl\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/fischl-rs-bd6ed57/.\" \"cargo/vendor/fischl\""
         ]
     },
     {
         "type": "inline",
-        "contents": "[package]\nname = \"fischl\"\ndescription = \"Helper library to manage compatibility and downloads for KeqingLauncher\"\nauthors = [ \"TukanDev\",]\nversion = \"0.1.0\"\nedition = \"2024\"\n\n[build-dependencies]\nprost-build = \"0.14\"\nprotoc-bin-vendored = \"3\"\n\n[dependencies]\nreqwest-middleware = \"0.4\"\nreqwest-retry = \"0.7\"\nsysinfo = \"0.37\"\nserde_json = \"1.0\"\nthiserror = \"1.0\"\nfutures-util = \"0.3\"\nfutures = \"0.3\"\n\n[features]\ncompat = [ \"dep:wincompatlib\",]\ndownload = [ \"dep:zip\", \"dep:tar\", \"dep:flate2\", \"dep:liblzma\", \"dep:zstd\", \"dep:chksum-md5\", \"dep:prost\", \"dep:crossbeam-deque\",]\ndefault = [ \"download\",]\n\n[dependencies.serde]\nversion = \"1\"\nfeatures = [ \"derive\",]\n\n[dependencies.reqwest]\nversion = \"0.12\"\nfeatures = [ \"blocking\", \"json\", \"stream\", \"native-tls-vendored\",]\n\n[dependencies.chksum-md5]\nversion = \"0.1.0\"\nfeatures = [ \"async-runtime-tokio\",]\noptional = true\n\n[dependencies.prost]\nversion = \"0.14\"\nfeatures = []\noptional = true\n\n[dependencies.tokio]\nversion = \"1.47\"\nfeatures = [ \"macros\",]\n\n[dependencies.zip]\nversion = \"5.1\"\ndefault-features = false\nfeatures = [ \"deflate\",]\noptional = true\n\n[dependencies.tar]\nversion = \"0.4.44\"\noptional = true\n\n[dependencies.flate2]\nversion = \"1.1.2\"\ndefault-features = false\nfeatures = [ \"zlib-rs\",]\noptional = true\n\n[dependencies.liblzma]\nversion = \"0.4\"\nfeatures = [ \"static\",]\noptional = true\n\n[dependencies.zstd]\nversion = \"0.13.3\"\noptional = true\n\n[dependencies.crossbeam-deque]\nversion = \"0.8.6\"\noptional = true\n\n[target.\"cfg(target_os = \\\"linux\\\")\".dependencies.wincompatlib]\nversion = \"0.7.7\"\nfeatures = [ \"all\",]\noptional = true\n",
+        "contents": "[package]\nname = \"fischl\"\ndescription = \"Helper library to manage compatibility and downloads for KeqingLauncher\"\nauthors = [ \"TukanDev\",]\nversion = \"0.1.0\"\nedition = \"2024\"\n\n[build-dependencies]\nprost-build = \"0.14\"\nprotoc-bin-vendored = \"3\"\n\n[dependencies]\nreqwest-middleware = \"0.4\"\nreqwest-retry = \"0.7\"\nsysinfo = \"0.37\"\nserde_json = \"1.0\"\nthiserror = \"1.0\"\nfutures-util = \"0.3\"\n\n[features]\ncompat = [ \"dep:wincompatlib\",]\ndownload = [ \"dep:zip\", \"dep:tar\", \"dep:flate2\", \"dep:liblzma\", \"dep:zstd\", \"dep:chksum-md5\", \"dep:prost\", \"dep:crossbeam-deque\",]\ndefault = [ \"download\",]\n\n[dependencies.serde]\nversion = \"1\"\nfeatures = [ \"derive\",]\n\n[dependencies.reqwest]\nversion = \"0.12\"\nfeatures = [ \"blocking\", \"json\", \"stream\", \"native-tls-vendored\", \"__tls\",]\n\n[dependencies.chksum-md5]\nversion = \"0.1.0\"\nfeatures = [ \"async-runtime-tokio\",]\noptional = true\n\n[dependencies.prost]\nversion = \"0.14\"\nfeatures = []\noptional = true\n\n[dependencies.tokio]\nversion = \"1.47\"\nfeatures = [ \"macros\",]\n\n[dependencies.zip]\nversion = \"5.1\"\ndefault-features = false\nfeatures = [ \"deflate\",]\noptional = true\n\n[dependencies.tar]\nversion = \"0.4.44\"\noptional = true\n\n[dependencies.flate2]\nversion = \"1.1.2\"\ndefault-features = false\nfeatures = [ \"zlib-rs\",]\noptional = true\n\n[dependencies.liblzma]\nversion = \"0.4\"\nfeatures = [ \"static\",]\noptional = true\n\n[dependencies.zstd]\nversion = \"0.13.3\"\noptional = true\n\n[dependencies.crossbeam-deque]\nversion = \"0.8.6\"\noptional = true\n\n[target.\"cfg(target_os = \\\"linux\\\")\".dependencies.wincompatlib]\nversion = \"0.7.7\"\nfeatures = [ \"all\",]\noptional = true\n",
         "dest": "cargo/vendor/fischl",
         "dest-filename": "Cargo.toml"
     },
