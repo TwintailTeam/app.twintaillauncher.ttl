@@ -19,6 +19,12 @@
         </p>
     </description>
     <releases>
+                        <release version="1.1.6" date="2025-09-23">
+            <description>
+                <p>Hotfix for 1.1.5 crashes</p>
+                <p>For further changelogs please visit github repository's latest release notes.</p>
+            </description>
+        </release>
                     <release version="1.1.5" date="2025-09-21">
             <description>
                 <p>Improve and fix GenshinImpact startup, deprecate jadeite for Honkai: StarRail, rewrite download handler for WutheringWaves and PunishingGrayRaven and predownload support for WutheringWaves and PunishingGrayRaven</p>
