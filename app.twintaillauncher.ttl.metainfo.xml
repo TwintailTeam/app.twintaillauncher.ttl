@@ -19,6 +19,12 @@
         </p>
     </description>
     <releases>
+                        <release version="1.1.7" date="2025-09-27">
+            <description>
+                <p>Make proton runners act as closely as possible like how they do on steam, bazzite path issues fully fixed and many other fixes</p>
+                <p>For further changelogs please visit github repository's latest release notes.</p>
+            </description>
+        </release>
                         <release version="1.1.6" date="2025-09-23">
             <description>
                 <p>Hotfix for 1.1.5 crashes</p>
