@@ -26,31 +26,10 @@ finish-args:
   - --filesystem=/media # External drives, steamdeck and handhelds especially
   - --filesystem=/run/media # External drives, steamdeck and handhelds especially
   - --filesystem=/mnt # External drives, steamdeck and handhelds especially
+  - --filesystem=~/.var/app/com.valvesoftware.Steam # Steam shortcuts and alike
+  - --filesystem=~/.local/share/Steam # Steam shortcuts and alike
   #- --filesystem=~/.local/share/applications # App can make .desktop file game shortcuts
   - --env=GST_PLUGIN_SYSTEM_PATH=/app/lib32/gstreamer-1.0:/app/lib/gstreamer-1.0:/usr/lib/extensions/gstreamer-1.0:/usr/lib/extension/gstreamer-1.0:/usr/lib/i386-linux-gnu/gstreamer-1.0:/usr/lib/x86_64-linux-gnu/gstreamer-1.0 # Some games will crash without
-
-# These extensions are needed to prevent good chunk of supported games crashing with video playback
-add-extensions:
-  org.gnome.Platform.GStreamer.Base:
-    directory: extension/gstreamer-base
-    subdirectories: true
-    no-autodownload: false
-    autodelete: true
-  org.gnome.Platform.GStreamer.Good:
-    directory: extension/gstreamer-good
-    subdirectories: true
-    no-autodownload: false
-    autodelete: true
-  org.gnome.Platform.GStreamer.Bad:
-    directory: extension/gstreamer-bad
-    subdirectories: true
-    no-autodownload: false
-    autodelete: true
-  org.gnome.Platform.GStreamer.Libav:
-    directory: extension/gstreamer-libav
-    subdirectories: true
-    no-autodownload: false
-    autodelete: true
 
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
@@ -104,15 +83,13 @@ modules:
       - install -Dm755 src-tauri/target/release/resources/krpatchz /app/lib/twintaillauncher/resources/krpatchz
       - install -Dm755 src-tauri/target/release/resources/7zr /app/lib/twintaillauncher/resources/7zr
       - install -Dm644 src-tauri/target/release/resources/hkrpg_patch.dll /app/lib/twintaillauncher/resources/hkrpg_patch.dll
-      # hacky way to make proton runs same as when ran from steam... NOT WHAT IM HAPPY ABOUT
-      - install -Dm644 src-tauri/target/release/resources/libs/steamclient.so /app/lib/twintaillauncher/resources/libs/steamclient.so
       - install -Dm644 src-tauri/target/release/resources/mangohud_default.conf /app/lib/twintaillauncher/resources/mangohud_default.conf
       - install -Dm644 LICENSE /app/share/licenses/app.twintaillauncher.ttl/LICENSE
       - desktop-file-edit --set-icon=app.twintaillauncher.ttl /app/share/applications/app.twintaillauncher.ttl.desktop
     sources:
       - type: git
         url: https://github.com/TwintailTeam/TwintailLauncher.git
-        tag: ttl-v1.1.7
+        tag: ttl-v1.1.8
       - type: file
         path: app.twintaillauncher.ttl.metainfo.xml
       - node_sources.json
