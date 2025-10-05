@@ -26,7 +26,7 @@ finish-args:
   - --filesystem=/media # External drives, steamdeck and handhelds especially
   - --filesystem=/run/media # External drives, steamdeck and handhelds especially
   - --filesystem=/mnt # External drives, steamdeck and handhelds especially
-  - --filesystem=~/.var/app/com.valvesoftware.Steam # Steam shortcuts and alike
+  #- --filesystem=~/.var/app/com.valvesoftware.Steam # Steam shortcuts and alike
   - --filesystem=~/.local/share/Steam # Steam shortcuts and alike
   #- --filesystem=~/.local/share/applications # App can make .desktop file game shortcuts
   - --env=GST_PLUGIN_SYSTEM_PATH=/app/lib32/gstreamer-1.0:/app/lib/gstreamer-1.0:/usr/lib/extensions/gstreamer-1.0:/usr/lib/extension/gstreamer-1.0:/usr/lib/i386-linux-gnu/gstreamer-1.0:/usr/lib/x86_64-linux-gnu/gstreamer-1.0 # Some games will crash without
