@@ -19,6 +19,12 @@
         </p>
     </description>
     <releases>
+            <release version="1.1.10" date="2025-10-12">
+            <description>
+                <p>Hotfix for 1.1.9, some xxmi launch changes...</p>
+                <p>For further changelogs please visit github repository's latest release notes.</p>
+            </description>
+        </release>
         <release version="1.1.9" date="2025-10-06">
             <description>
                 <p>Hotfix release for 1.1.8. Fix steam shortcuts path recognition and some more game launch issues.</p>
