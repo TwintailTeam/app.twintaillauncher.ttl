@@ -18,8 +18,6 @@ finish-args:
   - --talk-name=org.freedesktop.FileChooser # Folder pickers
   - --talk-name=org.freedesktop.Notifications # Notifications for some reason dont show without
   - --allow=devel # Needed by wine
-  - --allow=per-app-dev-shm
-  - --allow=multiarch
   # Should fix steamdeck controler navigation (Taken from https://github.com/flathub/com.heroicgameslauncher.hgl/blob/master/com.heroicgameslauncher.hgl.yml)
   - --filesystem=/run/udev:ro
   # Should fix discord rich presence (Taken from https://github.com/flathub/com.heroicgameslauncher.hgl/blob/master/com.heroicgameslauncher.hgl.yml)
@@ -94,7 +92,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/TwintailTeam/TwintailLauncher.git
-        tag: master
+        tag: ttl-v1.1.10
       - type: file
         path: app.twintaillauncher.ttl.metainfo.xml
       - node_sources.json
