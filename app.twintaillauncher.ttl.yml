@@ -20,7 +20,7 @@ finish-args:
   - --filesystem=xdg-run/tray-icon:create
   - --talk-name=org.kde.StatusNotifierWatcher
   # We need flatpak-spawn --host for steamrt
-  #- --talk-name=org.freedesktop.Flatpak
+  - --talk-name=org.freedesktop.Flatpak
   # Opening stuff in file managers
   - --talk-name=org.freedesktop.FileManager1
   # Folder pickers
