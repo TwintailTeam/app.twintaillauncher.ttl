@@ -19,8 +19,6 @@ finish-args:
   # System tray icon
   - --filesystem=xdg-run/tray-icon:create
   - --talk-name=org.kde.StatusNotifierWatcher
-  # We need flatpak-spawn --host for steamrt
-  - --talk-name=org.freedesktop.Flatpak
   # Opening stuff in file managers
   - --talk-name=org.freedesktop.FileManager1
   # Folder pickers
@@ -111,7 +109,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/TwintailTeam/TwintailLauncher.git
-        tag: master
+        tag: ttl-v1.1.11
       - type: file
         path: app.twintaillauncher.ttl.metainfo.xml
       - node_sources.json
