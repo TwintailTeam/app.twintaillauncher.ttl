@@ -57,16 +57,16 @@ finish-args:
 #  - --env=LC_NAME=C
 #  - --env=LC_NUMERIC=C
 #  - --env=LC_TELEPHONE=C
-  - --env=ALSA_CONFIG_PATH=
-  - --unset-env=ALSA_CONFIG_PATH
+#  - --env=ALSA_CONFIG_PATH=
+#  - --unset-env=ALSA_CONFIG_PATH
 #  - --env=MESA_GLSL_CACHE_DIR=
 #  - --unset-env=MESA_GLSL_CACHE_DIR
   - --env=STEAM_RUNTIME_PREFER_HOST_LIBRARIES=
   - --unset-env=STEAM_RUNTIME_PREFER_HOST_LIBRARIES
 #  - --env=STEAM_RUNTIME=
 #  - --unset-env=STEAM_RUNTIME
-  - --env=SDL_VIDEODRIVER=
-  - --unset-env=SDL_VIDEODRIVER
+#  - --env=SDL_VIDEODRIVER=
+#  - --unset-env=SDL_VIDEODRIVER
   - --env=DBUS_FATAL_WARNINGS=0
   - --env=PROTON_DEBUG_DIR=/var/tmp
 #  - --env=XDG_CONFIG_DIRS=/etc/xdg:/usr/lib/x86_64-linux-gnu/GL:/usr/lib/i386-linux-gnu/GL
