@@ -43,6 +43,8 @@ finish-args:
   - --filesystem=~/.local/share/Steam
   # Desktop shortcuts
   #- --filesystem=~/.local/share/applications
+  # Gamescope access
+  - --filesystem=xdg-run/gamescope-0:rw
   # Pressure Vessel (https://github.com/flathub/com.valvesoftware.Steam/commit/0538256facdb0837c33232bc65a9195a8a5bc750)
   - --env=XDG_DATA_DIRS=/app/share:/usr/lib/extensions/vulkan/share:/usr/share:/usr/share/runtime/share:/run/host/user-share:/run/host/share:/usr/lib/pressure-vessel/overrides/share
   # Set library paths for sandbox
@@ -121,7 +123,6 @@ modules:
       - install -Dm644 src-tauri/icons/128x128@2x.png /app/share/icons/hicolor/256x256@2/apps/app.twintaillauncher.ttl.png
       - install -Dm644 app.twintaillauncher.ttl.metainfo.xml /app/share/metainfo/app.twintaillauncher.ttl.metainfo.xml
       - install -Dm755 src-tauri/target/release/resources/hpatchz /app/lib/twintaillauncher/resources/hpatchz
-      - install -Dm755 src-tauri/target/release/resources/krpatchz /app/lib/twintaillauncher/resources/krpatchz
       - install -Dm755 src-tauri/target/release/resources/7zr /app/lib/twintaillauncher/resources/7zr
       - install -Dm755 src-tauri/target/release/resources/reaper /app/lib/twintaillauncher/resources/reaper
       - install -Dm644 src-tauri/target/release/resources/hkrpg_patch.dll /app/lib/twintaillauncher/resources/hkrpg_patch.dll
