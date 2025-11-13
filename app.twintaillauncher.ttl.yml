@@ -32,6 +32,8 @@ finish-args:
   - --allow=per-app-dev-shm
   # Steamdeck controler navigation
   - --filesystem=/run/udev:ro
+  # Process enum for gamescope reaper
+  - --filesystem=/proc:ro
   # Discord rich presence
   - --filesystem=xdg-run/app/com.discordapp.Discord:create
   # https://docs.flatpak.org/en/latest/sandbox-permissions.html#external-drive-access
