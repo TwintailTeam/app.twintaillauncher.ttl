@@ -39,16 +39,15 @@ finish-args:
   - --filesystem=/run/media
   - --filesystem=/mnt
   # Steam shortcuts and reading steam runners
-  #- --filesystem=~/.var/app/com.valvesoftware.Steam
+  - --filesystem=~/.var/app/com.valvesoftware.Steam
   - --filesystem=~/.local/share/Steam
+  - --filesystem=~/.steam
   # Desktop shortcuts
   #- --filesystem=~/.local/share/applications
   # Gamescope access
   - --filesystem=xdg-run/gamescope-0:rw
   # Pressure Vessel (https://github.com/flathub/com.valvesoftware.Steam/commit/0538256facdb0837c33232bc65a9195a8a5bc750)
   - --env=XDG_DATA_DIRS=/app/share:/usr/lib/extensions/vulkan/share:/usr/share:/usr/share/runtime/share:/run/host/user-share:/run/host/share:/usr/lib/pressure-vessel/overrides/share
-  # Set library paths for sandbox
-  - --env=LD_LIBRARY_PATH=/usr/lib/extensions/vulkan/gamescope/lib:/usr/lib/x86_64-linux-gnu:/usr/lib:/app/lib
   # Copied from https://github.com/flathub/com.valvesoftware.Steam/blob/beta/com.valvesoftware.Steam.yml
 #  - --env=TZ=
 #  - --unset-env=TZ
