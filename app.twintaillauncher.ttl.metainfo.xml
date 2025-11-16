@@ -19,6 +19,12 @@
         </p>
     </description>
     <releases>
+        <release version="1.1.12" date="2025-11-16">
+            <description>
+                <p>SteamDeck gaming mode now works, bunch of stability and bug fixes</p>
+                <p>For further changelogs please visit github repository's latest release notes.</p>
+            </description>
+        </release>
             <release version="1.1.11" date="2025-10-20">
             <description>
                 <p>Fix, XXMI loading jankiness, bug fixes, and hopefully SteamDeck gaming mode fixed??</p>
