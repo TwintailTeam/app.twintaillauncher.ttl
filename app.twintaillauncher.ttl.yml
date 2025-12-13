@@ -51,7 +51,7 @@ finish-args:
   # MangoHud configs
   - --filesystem=~/.config/MangoHud:ro
   # https://github.com/flathub/net.lutris.Lutris/blob/beta/net.lutris.Lutris.yml#L29
-#  - --env=PATH=/app/bin:/usr/bin:/app/utils/bin:/usr/lib/extensions/vulkan/MangoHud/bin/:/usr/lib/extensions/vulkan/gamescope/bin
+  - --env=PATH=/app/bin:/usr/bin:/app/utils/bin:/usr/lib/extensions/vulkan/MangoHud/bin/:/usr/lib/extensions/vulkan/gamescope/bin
   # For Steam Deck HDR support and many others
   - --env=LD_LIBRARY_PATH=/usr/lib/extensions/vulkan/gamescope/lib
   # Pressure Vessel (https://github.com/flathub/com.valvesoftware.Steam/commit/0538256facdb0837c33232bc65a9195a8a5bc750)
