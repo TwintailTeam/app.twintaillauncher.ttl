@@ -46,18 +46,26 @@ finish-args:
   - --filesystem=~/.local/share/applications
   # Gamescope access
   - --filesystem=xdg-run/gamescope-0:rw
+  # Access lutris storage so users can import their installs
+  - --filesystem=~/.local/share/lutris:rw
+  # MangoHud configs
+  - --filesystem=~/.config/MangoHud:ro
+  # https://github.com/flathub/net.lutris.Lutris/blob/beta/net.lutris.Lutris.yml#L29
+  - --env=PATH=/app/bin:/usr/bin:/app/utils/bin:/usr/lib/extensions/vulkan/MangoHud/bin/:/app/jre/bin/:/usr/lib/extensions/vulkan/gamescope/bin
+  # For Steam Deck HDR support and many others
+  - --env=LD_LIBRARY_PATH=/usr/lib/extensions/vulkan/gamescope/lib:/app/lib:/app/lib32:/usr/lib:/usr/lib32
   # Pressure Vessel (https://github.com/flathub/com.valvesoftware.Steam/commit/0538256facdb0837c33232bc65a9195a8a5bc750)
   - --env=XDG_DATA_DIRS=/app/share:/usr/lib/extensions/vulkan/share:/usr/share:/usr/share/runtime/share:/run/host/user-share:/run/host/share:/usr/lib/pressure-vessel/overrides/share
   # Copied from https://github.com/flathub/com.valvesoftware.Steam/blob/beta/com.valvesoftware.Steam.yml
-#  - --env=TZ=
-#  - --unset-env=TZ
-#  - --env=LC_ADDRESS=C
-#  - --env=LC_COLLATE=C
-#  - --env=LC_MONETARY=C
-#  - --env=LC_MEASUREMENT=C
-#  - --env=LC_NAME=C
-#  - --env=LC_NUMERIC=C
-#  - --env=LC_TELEPHONE=C
+  - --env=TZ=
+  - --unset-env=TZ
+  - --env=LC_ADDRESS=C
+  - --env=LC_COLLATE=C
+  - --env=LC_MONETARY=C
+  - --env=LC_MEASUREMENT=C
+  - --env=LC_NAME=C
+  - --env=LC_NUMERIC=C
+  - --env=LC_TELEPHONE=C
 #  - --env=ALSA_CONFIG_PATH=
 #  - --unset-env=ALSA_CONFIG_PATH
 #  - --env=MESA_GLSL_CACHE_DIR=
@@ -76,6 +84,27 @@ finish-args:
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
   - org.freedesktop.Sdk.Extension.node20
+  - org.gnome.Sdk.Compat.i386
+  - org.freedesktop.Sdk.Extension.toolchain-i386
+
+add-extensions:
+  org.gnome.Platform.Compat.i386:
+    directory: lib/i386-linux-gnu
+    version: "48"
+  org.gnome.Platform.Compat.i386.Debug:
+    directory: lib/debug/lib/i386-linux-gnu
+    version: "48"
+    no-autodownload: true
+
+x-compat-i386-opts: &compat_i386_opts
+  prepend-pkg-config-path: /app/lib32/pkgconfig:/usr/lib/i386-linux-gnu/pkgconfig
+  ldflags: -L/app/lib32 -Wl,-rpath-link=/app/lib32 -Wl,-z,relro,-z,now -Wl,--as-needed
+  ldflags-override: true
+  append-path: /usr/lib/sdk/toolchain-i386/bin
+  env:
+    CC: i686-unknown-linux-gnu-gcc
+    CXX: i686-unknown-linux-gnu-g++
+  libdir: /app/lib32
 
 build-options:
   append-path: /usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/node20/bin
@@ -99,6 +128,46 @@ modules:
         sha256: c74cf42216832441967b56c3e17ae1d0171662706ba3a09bad6fadb51ec362aa
         dest-filename: pnpm
         only-arches: [aarch64]
+  # https://github.com/flathub/net.lutris.Lutris/blob/beta/net.lutris.Lutris.yml#L290C1-L315C31
+  - name: gamemode
+    buildsystem: meson
+    config-opts: &gamemode_config_opts
+      - -Dwith-examples=false
+      - -Dwith-util=false
+      - -Dwith-sd-bus-provider=no-daemon
+    post-install:
+      - install -Dm0775 -t /app/bin ../data/gamemoderun
+      - ln -sf /app/lib/libgamemode.so.0.0.0 /app/lib/libgamemode.so.0
+      - ln -sf /app/lib/libgamemodeauto.so.0.0.0 /app/lib/libgamemodeauto.so.0
+    sources: &gamemode_sources
+      - type: archive
+        url: https://github.com/FeralInteractive/gamemode/releases/download/1.8.2/gamemode-1.8.2.tar.xz
+        sha256: 98cd1bcf6101c92fe87f974c7776af23c7e18f29ce6ecfe572b1c39dcde5c181
+        x-checker-data:
+          type: anitya
+          project-id: 17410
+          stable-only: true
+          url-template: https://github.com/FeralInteractive/gamemode/releases/download/$version/gamemode-$version.tar.xz
+  - name: gamemode-32bit
+    build-options:
+      arch:
+        x86_64: *compat_i386_opts
+    buildsystem: meson
+    config-opts: *gamemode_config_opts
+    post-install:
+      - ln -sf /app/lib32/libgamemode.so.0.0.0 /app/lib32/libgamemode.so.0
+    sources: *gamemode_sources
+  # Reference: https://github.com/flathub/net.lutris.Lutris/blob/beta/net.lutris.Lutris.yml#L525C1-L533C25
+  - name: ttl-app-environment
+    buildsystem: simple
+    build-commands:
+      - mkdir -p /app/lib/i386-linux-gnu
+      - install -Dm644 ld.so.conf -t /app/etc/
+      - mkdir -p /app/runners
+    sources:
+      - type: file
+        path: ld.so.conf
+  # Application itself
   - name: twintaillauncher
     buildsystem: simple
     build-options:
@@ -125,13 +194,12 @@ modules:
       - install -Dm755 src-tauri/target/release/resources/7zr /app/lib/twintaillauncher/resources/7zr
       - install -Dm755 src-tauri/target/release/resources/reaper /app/lib/twintaillauncher/resources/reaper
       - install -Dm644 src-tauri/target/release/resources/hkrpg_patch.dll /app/lib/twintaillauncher/resources/hkrpg_patch.dll
-      - install -Dm644 src-tauri/target/release/resources/mangohud_default.conf /app/lib/twintaillauncher/resources/mangohud_default.conf
       - install -Dm644 LICENSE /app/share/licenses/app.twintaillauncher.ttl/LICENSE
       - desktop-file-edit --set-icon=app.twintaillauncher.ttl /app/share/applications/app.twintaillauncher.ttl.desktop
     sources:
       - type: git
         url: https://github.com/TwintailTeam/TwintailLauncher.git
-        tag: ttl-v1.1.12
+        tag: master
       - type: file
         path: app.twintaillauncher.ttl.metainfo.xml
       - node_sources.json
