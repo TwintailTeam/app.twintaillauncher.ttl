@@ -2,8 +2,8 @@
     {
         "type": "git",
         "url": "https://github.com/twintailteam/fischl-rs",
-        "commit": "1979cefea4b2469ff08e0fb4b86f1f3e82db7780",
-        "dest": "flatpak-cargo/git/fischl-rs-1979cef"
+        "commit": "a68adaef5659230454eef66f2a10725812800744",
+        "dest": "flatpak-cargo/git/fischl-rs-a68adae"
     },
     {
         "type": "git",
@@ -542,19 +542,6 @@
         "type": "inline",
         "contents": "{\"package\": \"3078c7629b62d3f0439517fa394996acacc5cbc91c5a20d8c658e77abd503a71\", \"files\": {}}",
         "dest": "cargo/vendor/block-buffer-0.10.4",
-        "dest-filename": ".cargo-checksum.json"
-    },
-    {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/block2/block2-0.5.1.crate",
-        "sha256": "2c132eebf10f5cad5289222520a4a058514204aed6d791f1cf4fe8088b82d15f",
-        "dest": "cargo/vendor/block2-0.5.1"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": \"2c132eebf10f5cad5289222520a4a058514204aed6d791f1cf4fe8088b82d15f\", \"files\": {}}",
-        "dest": "cargo/vendor/block2-0.5.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -1873,7 +1860,7 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/fischl-rs-1979cef/.\" \"cargo/vendor/fischl\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/fischl-rs-a68adae/.\" \"cargo/vendor/fischl\""
         ]
     },
     {
@@ -4249,32 +4236,6 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/objc-sys/objc-sys-0.3.5.crate",
-        "sha256": "cdb91bdd390c7ce1a8607f35f3ca7151b65afc0ff5ff3b34fa350f7d7c7e4310",
-        "dest": "cargo/vendor/objc-sys-0.3.5"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": \"cdb91bdd390c7ce1a8607f35f3ca7151b65afc0ff5ff3b34fa350f7d7c7e4310\", \"files\": {}}",
-        "dest": "cargo/vendor/objc-sys-0.3.5",
-        "dest-filename": ".cargo-checksum.json"
-    },
-    {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/objc2/objc2-0.5.2.crate",
-        "sha256": "46a785d4eeff09c14c487497c162e92766fbb3e4059a71840cecc03d9a50b804",
-        "dest": "cargo/vendor/objc2-0.5.2"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": \"46a785d4eeff09c14c487497c162e92766fbb3e4059a71840cecc03d9a50b804\", \"files\": {}}",
-        "dest": "cargo/vendor/objc2-0.5.2",
-        "dest-filename": ".cargo-checksum.json"
-    },
-    {
-        "type": "archive",
-        "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/objc2/objc2-0.6.3.crate",
         "sha256": "b7c2599ce0ec54857b29ce62166b0ed9b4f6f1a70ccc9a71165b6154caca8c05",
         "dest": "cargo/vendor/objc2-0.6.3"
@@ -4418,19 +4379,6 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/objc2-foundation/objc2-foundation-0.2.2.crate",
-        "sha256": "0ee638a5da3799329310ad4cfa62fbf045d5f56e3ef5ba4149e7452dcf89d5a8",
-        "dest": "cargo/vendor/objc2-foundation-0.2.2"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": \"0ee638a5da3799329310ad4cfa62fbf045d5f56e3ef5ba4149e7452dcf89d5a8\", \"files\": {}}",
-        "dest": "cargo/vendor/objc2-foundation-0.2.2",
-        "dest-filename": ".cargo-checksum.json"
-    },
-    {
-        "type": "archive",
-        "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/objc2-foundation/objc2-foundation-0.3.2.crate",
         "sha256": "e3e0adef53c21f888deb4fa59fc59f7eb17404926ee8a6f59f5df0fd7f9f3272",
         "dest": "cargo/vendor/objc2-foundation-0.3.2"
@@ -4478,32 +4426,6 @@
         "type": "inline",
         "contents": "{\"package\": \"2a1e6550c4caed348956ce3370c9ffeca70bb1dbed4fa96112e7c6170e074586\", \"files\": {}}",
         "dest": "cargo/vendor/objc2-javascript-core-0.3.2",
-        "dest-filename": ".cargo-checksum.json"
-    },
-    {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/objc2-metal/objc2-metal-0.2.2.crate",
-        "sha256": "dd0cba1276f6023976a406a14ffa85e1fdd19df6b0f737b063b95f6c8c7aadd6",
-        "dest": "cargo/vendor/objc2-metal-0.2.2"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": \"dd0cba1276f6023976a406a14ffa85e1fdd19df6b0f737b063b95f6c8c7aadd6\", \"files\": {}}",
-        "dest": "cargo/vendor/objc2-metal-0.2.2",
-        "dest-filename": ".cargo-checksum.json"
-    },
-    {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/objc2-quartz-core/objc2-quartz-core-0.2.2.crate",
-        "sha256": "e42bee7bff906b14b167da2bac5efe6b6a07e6f7c0a21a7308d40c960242dc7a",
-        "dest": "cargo/vendor/objc2-quartz-core-0.2.2"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": \"e42bee7bff906b14b167da2bac5efe6b6a07e6f7c0a21a7308d40c960242dc7a\", \"files\": {}}",
-        "dest": "cargo/vendor/objc2-quartz-core-0.2.2",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -6667,14 +6589,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/softbuffer/softbuffer-0.4.6.crate",
-        "sha256": "18051cdd562e792cad055119e0cdb2cfc137e44e3987532e0f9659a77931bb08",
-        "dest": "cargo/vendor/softbuffer-0.4.6"
+        "url": "https://static.crates.io/crates/softbuffer/softbuffer-0.4.8.crate",
+        "sha256": "aac18da81ebbf05109ab275b157c22a653bb3c12cf884450179942f81bcbf6c3",
+        "dest": "cargo/vendor/softbuffer-0.4.8"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"18051cdd562e792cad055119e0cdb2cfc137e44e3987532e0f9659a77931bb08\", \"files\": {}}",
-        "dest": "cargo/vendor/softbuffer-0.4.6",
+        "contents": "{\"package\": \"aac18da81ebbf05109ab275b157c22a653bb3c12cf884450179942f81bcbf6c3\", \"files\": {}}",
+        "dest": "cargo/vendor/softbuffer-0.4.8",
         "dest-filename": ".cargo-checksum.json"
     },
     {
