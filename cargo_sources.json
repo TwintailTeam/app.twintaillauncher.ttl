@@ -2,8 +2,8 @@
     {
         "type": "git",
         "url": "https://github.com/twintailteam/fischl-rs",
-        "commit": "fee28d55ed2674788c40125662e3d9a5095729fa",
-        "dest": "flatpak-cargo/git/fischl-rs-fee28d5"
+        "commit": "48ca4d5585c30138a7b87e646a2a5961507388bb",
+        "dest": "flatpak-cargo/git/fischl-rs-48ca4d5"
     },
     {
         "type": "git",
@@ -1912,7 +1912,7 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/fischl-rs-fee28d5/.\" \"cargo/vendor/fischl\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/fischl-rs-48ca4d5/.\" \"cargo/vendor/fischl\""
         ]
     },
     {
@@ -3625,14 +3625,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/liblzma-sys/liblzma-sys-0.4.4.crate",
-        "sha256": "01b9596486f6d60c3bbe644c0e1be1aa6ccc472ad630fe8927b456973d7cb736",
-        "dest": "cargo/vendor/liblzma-sys-0.4.4"
+        "url": "https://static.crates.io/crates/liblzma-sys/liblzma-sys-0.4.5.crate",
+        "sha256": "9f2db66f3268487b5033077f266da6777d057949b8f93c8ad82e441df25e6186",
+        "dest": "cargo/vendor/liblzma-sys-0.4.5"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"01b9596486f6d60c3bbe644c0e1be1aa6ccc472ad630fe8927b456973d7cb736\", \"files\": {}}",
-        "dest": "cargo/vendor/liblzma-sys-0.4.4",
+        "contents": "{\"package\": \"9f2db66f3268487b5033077f266da6777d057949b8f93c8ad82e441df25e6186\", \"files\": {}}",
+        "dest": "cargo/vendor/liblzma-sys-0.4.5",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -7967,6 +7967,19 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/typed-path/typed-path-0.12.0.crate",
+        "sha256": "7922f2cdc51280d47b491af9eafc41eb0cdab85eabcb390c854412fcbf26dbe8",
+        "dest": "cargo/vendor/typed-path-0.12.0"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"7922f2cdc51280d47b491af9eafc41eb0cdab85eabcb390c854412fcbf26dbe8\", \"files\": {}}",
+        "dest": "cargo/vendor/typed-path-0.12.0",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/typeid/typeid-1.0.3.crate",
         "sha256": "bc7d623258602320d5c55d1bc22793b57daff0ec7efc270ea7d55ce1d5f5471c",
         "dest": "cargo/vendor/typeid-1.0.3"
@@ -9904,14 +9917,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/zip/zip-7.1.0.crate",
-        "sha256": "9013f1222db8a6d680f13a7ccdc60a781199cd09c2fa4eff58e728bb181757fc",
-        "dest": "cargo/vendor/zip-7.1.0"
+        "url": "https://static.crates.io/crates/zip/zip-7.2.0.crate",
+        "sha256": "c42e33efc22a0650c311c2ef19115ce232583abbe80850bc8b66509ebef02de0",
+        "dest": "cargo/vendor/zip-7.2.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"9013f1222db8a6d680f13a7ccdc60a781199cd09c2fa4eff58e728bb181757fc\", \"files\": {}}",
-        "dest": "cargo/vendor/zip-7.1.0",
+        "contents": "{\"package\": \"c42e33efc22a0650c311c2ef19115ce232583abbe80850bc8b66509ebef02de0\", \"files\": {}}",
+        "dest": "cargo/vendor/zip-7.2.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -9930,14 +9943,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/zmij/zmij-1.0.15.crate",
-        "sha256": "94f63c051f4fe3c1509da62131a678643c5b6fbdc9273b2b79d4378ebda003d2",
-        "dest": "cargo/vendor/zmij-1.0.15"
+        "url": "https://static.crates.io/crates/zmij/zmij-1.0.16.crate",
+        "sha256": "dfcd145825aace48cff44a8844de64bf75feec3080e0aa5cdbde72961ae51a65",
+        "dest": "cargo/vendor/zmij-1.0.16"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"94f63c051f4fe3c1509da62131a678643c5b6fbdc9273b2b79d4378ebda003d2\", \"files\": {}}",
-        "dest": "cargo/vendor/zmij-1.0.15",
+        "contents": "{\"package\": \"dfcd145825aace48cff44a8844de64bf75feec3080e0aa5cdbde72961ae51a65\", \"files\": {}}",
+        "dest": "cargo/vendor/zmij-1.0.16",
         "dest-filename": ".cargo-checksum.json"
     },
     {
