@@ -27,7 +27,7 @@ finish-args:
   - --talk-name=org.freedesktop.Notifications
   # https://tauri.app/plugin/single-instance/#flatpak
   - --talk-name=org.twintaillauncher.SingleInstance
-  - --own-name=org.twintaillauncher.SingleInstance
+#  - --own-name=org.twintaillauncher.SingleInstance
   # Wine needs devel access
   - --allow=devel
   - --allow=multiarch
