@@ -222,7 +222,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/TwintailTeam/TwintailLauncher.git
-        tag: master
+        tag: ttl-v1.1.14
       - type: file
         path: app.twintaillauncher.ttl.metainfo.xml
       - node_sources.json

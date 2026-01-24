@@ -2,8 +2,8 @@
     {
         "type": "git",
         "url": "https://github.com/twintailteam/fischl-rs",
-        "commit": "48ca4d5585c30138a7b87e646a2a5961507388bb",
-        "dest": "flatpak-cargo/git/fischl-rs-48ca4d5"
+        "commit": "9230c8d6ec39075dd91eaf59057207086e823b72",
+        "dest": "flatpak-cargo/git/fischl-rs-9230c8d"
     },
     {
         "type": "git",
@@ -1912,7 +1912,7 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/fischl-rs-48ca4d5/.\" \"cargo/vendor/fischl\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/fischl-rs-9230c8d/.\" \"cargo/vendor/fischl\""
         ]
     },
     {
@@ -4665,14 +4665,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/openssl-probe/openssl-probe-0.2.0.crate",
-        "sha256": "9f50d9b3dabb09ecd771ad0aa242ca6894994c130308ca3d7684634df8037391",
-        "dest": "cargo/vendor/openssl-probe-0.2.0"
+        "url": "https://static.crates.io/crates/openssl-probe/openssl-probe-0.2.1.crate",
+        "sha256": "7c87def4c32ab89d880effc9e097653c8da5d6ef28e6b539d313baaacfbafcbe",
+        "dest": "cargo/vendor/openssl-probe-0.2.1"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"9f50d9b3dabb09ecd771ad0aa242ca6894994c130308ca3d7684634df8037391\", \"files\": {}}",
-        "dest": "cargo/vendor/openssl-probe-0.2.0",
+        "contents": "{\"package\": \"7c87def4c32ab89d880effc9e097653c8da5d6ef28e6b539d313baaacfbafcbe\", \"files\": {}}",
+        "dest": "cargo/vendor/openssl-probe-0.2.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -5367,14 +5367,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/proc-macro2/proc-macro2-1.0.105.crate",
-        "sha256": "535d180e0ecab6268a3e718bb9fd44db66bbbc256257165fc699dadf70d16fe7",
-        "dest": "cargo/vendor/proc-macro2-1.0.105"
+        "url": "https://static.crates.io/crates/proc-macro2/proc-macro2-1.0.106.crate",
+        "sha256": "8fd00f0bb2e90d81d1044c2b32617f68fcb9fa3bb7640c23e9c748e53fb30934",
+        "dest": "cargo/vendor/proc-macro2-1.0.106"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"535d180e0ecab6268a3e718bb9fd44db66bbbc256257165fc699dadf70d16fe7\", \"files\": {}}",
-        "dest": "cargo/vendor/proc-macro2-1.0.105",
+        "contents": "{\"package\": \"8fd00f0bb2e90d81d1044c2b32617f68fcb9fa3bb7640c23e9c748e53fb30934\", \"files\": {}}",
+        "dest": "cargo/vendor/proc-macro2-1.0.106",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -7967,14 +7967,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/typed-path/typed-path-0.12.0.crate",
-        "sha256": "7922f2cdc51280d47b491af9eafc41eb0cdab85eabcb390c854412fcbf26dbe8",
-        "dest": "cargo/vendor/typed-path-0.12.0"
+        "url": "https://static.crates.io/crates/typed-path/typed-path-0.12.1.crate",
+        "sha256": "e43ffa54726cdc9ea78392023ffe9fe9cf9ac779e1c6fcb0d23f9862e3879d20",
+        "dest": "cargo/vendor/typed-path-0.12.1"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"7922f2cdc51280d47b491af9eafc41eb0cdab85eabcb390c854412fcbf26dbe8\", \"files\": {}}",
-        "dest": "cargo/vendor/typed-path-0.12.0",
+        "contents": "{\"package\": \"e43ffa54726cdc9ea78392023ffe9fe9cf9ac779e1c6fcb0d23f9862e3879d20\", \"files\": {}}",
+        "dest": "cargo/vendor/typed-path-0.12.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
