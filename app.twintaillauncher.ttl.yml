@@ -25,6 +25,9 @@ finish-args:
   - --talk-name=org.freedesktop.FileChooser
   # Notifications
   - --talk-name=org.freedesktop.Notifications
+  # https://tauri.app/plugin/single-instance/#flatpak
+  - --talk-name=org.twintaillauncher.SingleInstance
+#  - --own-name=org.twintaillauncher.SingleInstance
   # Wine needs devel access
   - --allow=devel
   - --allow=multiarch
@@ -55,7 +58,7 @@ finish-args:
   # For Steam Deck HDR support and many others
   - --env=LD_LIBRARY_PATH=/usr/lib/extensions/vulkan/gamescope/lib
   # Pressure Vessel (https://github.com/flathub/com.valvesoftware.Steam/commit/0538256facdb0837c33232bc65a9195a8a5bc750)
-  - --env=XDG_DATA_DIRS=/app/share:/usr/lib/extensions/vulkan/share:/usr/share:/usr/share/runtime/share:/run/host/user-share:/run/host/share:/usr/lib/pressure-vessel/overrides/share
+  - --env=XDG_DATA_DIRS=/app/share:/usr/lib/extensions/vulkan/share:/usr/share:/usr/share/runtime/share:/run/host/user-share:/run/host/share:/usr/lib/pressure-vessel/overrides/share:/app/lib/extensions/vulkan/MangoHud/share
   # Copied from https://github.com/flathub/com.valvesoftware.Steam/blob/beta/com.valvesoftware.Steam.yml
   - --env=TZ=
   - --unset-env=TZ
@@ -110,7 +113,7 @@ modules:
   # https://github.com/flathub/net.lutris.Lutris/blob/beta/net.lutris.Lutris.yml#L290C1-L315C31
   - name: gamemode
     buildsystem: meson
-    config-opts: &gamemode_config_opts
+    config-opts:
       - -Dwith-examples=false
       - -Dwith-util=false
       - -Dwith-sd-bus-provider=no-daemon
@@ -118,7 +121,7 @@ modules:
       - install -Dm0775 -t /app/bin ../data/gamemoderun
       - ln -sf /app/lib/libgamemode.so.0.0.0 /app/lib/libgamemode.so.0
       - ln -sf /app/lib/libgamemodeauto.so.0.0.0 /app/lib/libgamemodeauto.so.0
-    sources: &gamemode_sources
+    sources:
       - type: archive
         url: https://github.com/FeralInteractive/gamemode/releases/download/1.8.2/gamemode-1.8.2.tar.xz
         sha256: 98cd1bcf6101c92fe87f974c7776af23c7e18f29ce6ecfe572b1c39dcde5c181
@@ -127,16 +130,67 @@ modules:
           project-id: 17410
           stable-only: true
           url-template: https://github.com/FeralInteractive/gamemode/releases/download/$version/gamemode-$version.tar.xz
-  # Reference: https://github.com/flathub/net.lutris.Lutris/blob/beta/net.lutris.Lutris.yml#L525C1-L533C25
-  - name: ttl-app-environment
-    buildsystem: simple
-    build-commands:
-      - mkdir -p /app/lib/i386-linux-gnu
-      - install -Dm644 ld.so.conf -t /app/etc/
-      - mkdir -p /app/runners
+  # We need to ship our own for user convinience and better control using our app settings, really not a fan of this workaround but its way more user friendly then setting env for entire application using the traditional flatpak way
+  - name: MangoHud
+    buildsystem: meson
+    build-options:
+      prefix: /app/lib/extensions/vulkan/MangoHud
+      libdir: /app/lib/extensions/vulkan/MangoHud/lib/x86_64-linux-gnu
+      prepend-path: /app/lib/extensions/vulkan/MangoHud/bin
+      prepend-pkg-config-path: /app/lib/extensions/vulkan/MangoHud/lib/x86_64-linux-gnu/pkgconfig
+      ldflags: -Wl,-rpath=/app/lib/extensions/vulkan/MangoHud/lib/x86_64-linux-gnu
+      env:
+        FLATPAK_LIBDIR: /app/lib/extensions/vulkan/MangoHud/lib/x86_64-linux-gnu
+        C_INCLUDE_PATH: /app/lib/extensions/vulkan/MangoHud/include
+        CPLUS_INCLUDE_PATH: /app/lib/extensions/vulkan/MangoHud/include
+    cleanup:
+      - /include
+      - /share/cmake
+      - /share/doc
+      - /share/man
+      - /share/pkgconfig
+      - /lib/*/pkgconfig
+      - /lib/*/cmake
+      - /lib/*/*.a
+      - /lib/*/*.la
+    config-opts:
+      - -Dmangoapp=true
+      - -Dappend_libdir_mangohud=false
+      - -Dmangoplot=disabled
     sources:
-      - type: file
-        path: ld.so.conf
+      - type: archive
+        url: https://github.com/flightlessmango/MangoHud/releases/download/v0.8.2/MangoHud-v0.8.2-Source.tar.xz
+        sha256: 9fe98da24f790f4489efc1e0c8e3ad0291c80efd882a406797d54dab82f8765b
+    modules:
+      - name: libNVCtrl
+        buildsystem: simple
+        no-autogen: true
+        no-make-install: true
+        build-commands:
+          - make
+          - install -d /app/lib/extensions/vulkan/MangoHud/lib/x86_64-linux-gnu
+          - cp -a libXNVCtrl.so* /app/lib/extensions/vulkan/MangoHud/lib/x86_64-linux-gnu
+          - install -d /app/lib/extensions/vulkan/MangoHud/include/NVCtrl
+          - install -D *.h /app/lib/extensions/vulkan/MangoHud/include/NVCtrl
+        subdir: src/libXNVCtrl
+        sources:
+          - type: archive
+            archive-type: tar
+            url: https://api.github.com/repos/NVIDIA/nvidia-settings/tarball/refs/tags/470.63.01
+            sha256: 0ede63515851d85ac0d1ed5f00e355f539968e6d1fd226120a27b2c66c3575de
+          - type: patch
+            path: patches/libxnvctrl_so_0.patch
+      - name: glfw
+        buildsystem: cmake-ninja
+        config-opts:
+          - -DGLFW_BUILD_EXAMPLES=BOOL=OFF
+          - -DGLFW_BUILD_TESTS=BOOL=OFF
+          - -DGLFW_BUILD_DOCS=BOOL=OFF
+        sources:
+          - type: git
+            url: https://github.com/glfw/glfw.git
+            tag: '3.4'
+            commit: 7b6aead9fb88b3623e3b3725ebb42670cbe4c579
   # Application itself
   - name: twintaillauncher
     buildsystem: simple
@@ -161,7 +215,6 @@ modules:
       - install -Dm644 src-tauri/icons/128x128@2x.png /app/share/icons/hicolor/256x256@2/apps/app.twintaillauncher.ttl.png
       - install -Dm644 app.twintaillauncher.ttl.metainfo.xml /app/share/metainfo/app.twintaillauncher.ttl.metainfo.xml
       - install -Dm755 src-tauri/target/release/resources/hpatchz /app/lib/twintaillauncher/resources/hpatchz
-      - install -Dm755 src-tauri/target/release/resources/7zr /app/lib/twintaillauncher/resources/7zr
       - install -Dm755 src-tauri/target/release/resources/reaper /app/lib/twintaillauncher/resources/reaper
       - install -Dm644 src-tauri/target/release/resources/hkrpg_patch.dll /app/lib/twintaillauncher/resources/hkrpg_patch.dll
       - install -Dm644 LICENSE /app/share/licenses/app.twintaillauncher.ttl/LICENSE
@@ -169,7 +222,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/TwintailTeam/TwintailLauncher.git
-        tag: ttl-v1.1.13
+        tag: ttl-v1.1.14
       - type: file
         path: app.twintaillauncher.ttl.metainfo.xml
       - node_sources.json
