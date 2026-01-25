@@ -19,9 +19,9 @@
         </p>
     </description>
     <releases>
-        <release version="1.1.14" date="2026-01-24">
+        <release version="1.1.15" date="2026-01-25">
             <description>
-                <p>Bugfixes, feature optimizations for xxmi, and bunch of other stuff</p>
+                <p>Emergency hotfix for 1.1.14 issues</p>
                 <p>For further changelogs please visit github repository's latest release notes.</p>
             </description>
         </release>
