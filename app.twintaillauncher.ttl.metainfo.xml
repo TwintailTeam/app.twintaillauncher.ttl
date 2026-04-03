@@ -11,11 +11,7 @@
             TTL is an all-in-one tool for downloading, managing, and launching your favorite anime games. It’s designed with flexibility, ease of use, and customization in mind.
         </p>
         <p>
-            Supported games: Genshin Impact, Honkai: Star Rail, Honkai Impact 3rd, Zenless Zone Zero, Wuthering Waves, Punishing: Gray Raven, AetherGazer
-        </p>
-        <p>
-            Is TTL safe to use? Can I get banned?
-            We do our best to ensure the launcher avoids detection and doesn't interfere with sensitive files or anti-cheat systems. However, some games require the launcher to disable the anti-cheat to get them running (Linux only). Use TTL at your own risk.
+            Supported games: Genshin Impact, Honkai: Star Rail, Honkai Impact 3rd, Zenless Zone Zero, Wuthering Waves, Punishing Gray Raven, AetherGazer, Arknights Endfield, The Seven Deadly Sins: Grand Cross
         </p>
     </description>
     <releases>
@@ -55,6 +51,22 @@
         <screenshot>
             <image type="source">https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic06.png</image>
             <caption xml:lang="en">Repositories and manifests list</caption>
+        </screenshot>
+        <screenshot>
+            <image type="source">https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic07.png</image>
+            <caption xml:lang="en">???</caption>
+        </screenshot>
+        <screenshot>
+            <image type="source">https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic08.png</image>
+            <caption xml:lang="en">???</caption>
+        </screenshot>
+        <screenshot>
+            <image type="source">https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic09.png</image>
+            <caption xml:lang="en">???</caption>
+        </screenshot>
+        <screenshot>
+            <image type="source">https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic010.png</image>
+            <caption xml:lang="en">???</caption>
         </screenshot>
     </screenshots>
     <launchable type="desktop-id">app.twintaillauncher.ttl.desktop</launchable>
