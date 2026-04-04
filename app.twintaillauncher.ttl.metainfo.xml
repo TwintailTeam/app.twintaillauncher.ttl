@@ -15,9 +15,9 @@
         </p>
     </description>
     <releases>
-        <release version="1.1.15" date="2026-01-25">
+        <release version="2.0.0" date="2026-04-04">
             <description>
-                <p>Emergency hotfix for 1.1.14 issues</p>
+                <p>Major release 2.0.0</p>
                 <p>For further changelogs please visit github repository's latest release notes.</p>
             </description>
         </release>
@@ -34,39 +34,39 @@
         </screenshot>
         <screenshot type="default">
             <image type="source">https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic02.png</image>
-            <caption xml:lang="en">Download in progress</caption>
+            <caption xml:lang="en">Main window with insttalled games</caption>
         </screenshot>
         <screenshot>
             <image type="source">https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic03.png</image>
-            <caption xml:lang="en">Download resume showcase</caption>
+            <caption xml:lang="en">Game update with downloads in progress</caption>
         </screenshot>
         <screenshot>
             <image type="source">https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic04.png</image>
-            <caption xml:lang="en">Installation settings</caption>
+            <caption xml:lang="en">Game download resume state</caption>
         </screenshot>
         <screenshot>
             <image type="source">https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic05.png</image>
-            <caption xml:lang="en">Application settings</caption>
+            <caption xml:lang="en">Game download queued</caption>
         </screenshot>
         <screenshot>
             <image type="source">https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic06.png</image>
-            <caption xml:lang="en">Repositories and manifests list</caption>
+            <caption xml:lang="en">Download manager with queued items</caption>
         </screenshot>
         <screenshot>
             <image type="source">https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic07.png</image>
-            <caption xml:lang="en">???</caption>
+            <caption xml:lang="en">Game settings</caption>
         </screenshot>
         <screenshot>
             <image type="source">https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic08.png</image>
-            <caption xml:lang="en">???</caption>
+            <caption xml:lang="en">Import existing game installation</caption>
         </screenshot>
         <screenshot>
             <image type="source">https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic09.png</image>
-            <caption xml:lang="en">???</caption>
+            <caption xml:lang="en">Runner manager for proton versions</caption>
         </screenshot>
         <screenshot>
             <image type="source">https://github.com/TwintailTeam/TwintailLauncher/raw/master/screenshots/linux/pic010.png</image>
-            <caption xml:lang="en">???</caption>
+            <caption xml:lang="en">Application settings</caption>
         </screenshot>
     </screenshots>
     <launchable type="desktop-id">app.twintaillauncher.ttl.desktop</launchable>
