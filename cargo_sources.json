@@ -1,9 +1,9 @@
 [
     {
         "type": "git",
-        "url": "https://github.com/minlor/fischl-rs",
-        "commit": "f77000ff12eb0da5406f9e9ea99d72ba19652233",
-        "dest": "flatpak-cargo/git/fischl-rs-f77000f"
+        "url": "https://github.com/twintailteam/fischl-rs",
+        "commit": "c6aa3029343d63f794ed6218f5be596e73791473",
+        "dest": "flatpak-cargo/git/fischl-rs-c6aa302"
     },
     {
         "type": "git",
@@ -910,14 +910,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/cc/cc-1.2.58.crate",
-        "sha256": "e1e928d4b69e3077709075a938a05ffbedfa53a84c8f766efbf8220bb1ff60e1",
-        "dest": "cargo/vendor/cc-1.2.58"
+        "url": "https://static.crates.io/crates/cc/cc-1.2.59.crate",
+        "sha256": "b7a4d3ec6524d28a329fc53654bbadc9bdd7b0431f5d65f1a56ffb28a1ee5283",
+        "dest": "cargo/vendor/cc-1.2.59"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"e1e928d4b69e3077709075a938a05ffbedfa53a84c8f766efbf8220bb1ff60e1\", \"files\": {}}",
-        "dest": "cargo/vendor/cc-1.2.58",
+        "contents": "{\"package\": \"b7a4d3ec6524d28a329fc53654bbadc9bdd7b0431f5d65f1a56ffb28a1ee5283\", \"files\": {}}",
+        "dest": "cargo/vendor/cc-1.2.59",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -2080,14 +2080,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/fastrand/fastrand-2.3.0.crate",
-        "sha256": "37909eebbb50d72f9059c3b6d82c0463f2ff062c9e95845c43a6c9c0355411be",
-        "dest": "cargo/vendor/fastrand-2.3.0"
+        "url": "https://static.crates.io/crates/fastrand/fastrand-2.4.0.crate",
+        "sha256": "a043dc74da1e37d6afe657061213aa6f425f855399a11d3463c6ecccc4dfda1f",
+        "dest": "cargo/vendor/fastrand-2.4.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"37909eebbb50d72f9059c3b6d82c0463f2ff062c9e95845c43a6c9c0355411be\", \"files\": {}}",
-        "dest": "cargo/vendor/fastrand-2.3.0",
+        "contents": "{\"package\": \"a043dc74da1e37d6afe657061213aa6f425f855399a11d3463c6ecccc4dfda1f\", \"files\": {}}",
+        "dest": "cargo/vendor/fastrand-2.4.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -2184,7 +2184,7 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/fischl-rs-f77000f/.\" \"cargo/vendor/fischl\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/fischl-rs-c6aa302/.\" \"cargo/vendor/fischl\""
         ]
     },
     {
@@ -3975,14 +3975,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/libz-sys/libz-sys-1.1.25.crate",
-        "sha256": "d52f4c29e2a68ac30c9087e1b772dc9f44a2b66ed44edf2266cf2be9b03dafc1",
-        "dest": "cargo/vendor/libz-sys-1.1.25"
+        "url": "https://static.crates.io/crates/libz-sys/libz-sys-1.1.26.crate",
+        "sha256": "786a7c68b5bbe177567d237ec4940d11666206e97b20a983421b251092f24d7d",
+        "dest": "cargo/vendor/libz-sys-1.1.26"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"d52f4c29e2a68ac30c9087e1b772dc9f44a2b66ed44edf2266cf2be9b03dafc1\", \"files\": {}}",
-        "dest": "cargo/vendor/libz-sys-1.1.25",
+        "contents": "{\"package\": \"786a7c68b5bbe177567d237ec4940d11666206e97b20a983421b251092f24d7d\", \"files\": {}}",
+        "dest": "cargo/vendor/libz-sys-1.1.26",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -4261,14 +4261,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/muda/muda-0.17.1.crate",
-        "sha256": "01c1738382f66ed56b3b9c8119e794a2e23148ac8ea214eda86622d4cb9d415a",
-        "dest": "cargo/vendor/muda-0.17.1"
+        "url": "https://static.crates.io/crates/muda/muda-0.17.2.crate",
+        "sha256": "7c9fec5a4e89860383d778d10563a605838f8f0b2f9303868937e5ff32e86177",
+        "dest": "cargo/vendor/muda-0.17.2"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"01c1738382f66ed56b3b9c8119e794a2e23148ac8ea214eda86622d4cb9d415a\", \"files\": {}}",
-        "dest": "cargo/vendor/muda-0.17.1",
+        "contents": "{\"package\": \"7c9fec5a4e89860383d778d10563a605838f8f0b2f9303868937e5ff32e86177\", \"files\": {}}",
+        "dest": "cargo/vendor/muda-0.17.2",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -6710,14 +6710,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/semver/semver-1.0.27.crate",
-        "sha256": "d767eb0aabc880b29956c35734170f26ed551a859dbd361d140cdbeca61ab1e2",
-        "dest": "cargo/vendor/semver-1.0.27"
+        "url": "https://static.crates.io/crates/semver/semver-1.0.28.crate",
+        "sha256": "8a7852d02fc848982e0c167ef163aaff9cd91dc640ba85e263cb1ce46fae51cd",
+        "dest": "cargo/vendor/semver-1.0.28"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"d767eb0aabc880b29956c35734170f26ed551a859dbd361d140cdbeca61ab1e2\", \"files\": {}}",
-        "dest": "cargo/vendor/semver-1.0.27",
+        "contents": "{\"package\": \"8a7852d02fc848982e0c167ef163aaff9cd91dc640ba85e263cb1ce46fae51cd\", \"files\": {}}",
+        "dest": "cargo/vendor/semver-1.0.28",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -7672,27 +7672,27 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/tauri-plugin-dialog/tauri-plugin-dialog-2.6.0.crate",
-        "sha256": "9204b425d9be8d12aa60c2a83a289cf7d1caae40f57f336ed1155b3a5c0e359b",
-        "dest": "cargo/vendor/tauri-plugin-dialog-2.6.0"
+        "url": "https://static.crates.io/crates/tauri-plugin-dialog/tauri-plugin-dialog-2.7.0.crate",
+        "sha256": "a1fa4150c95ae391946cc8b8f905ab14797427caba3a8a2f79628e956da91809",
+        "dest": "cargo/vendor/tauri-plugin-dialog-2.7.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"9204b425d9be8d12aa60c2a83a289cf7d1caae40f57f336ed1155b3a5c0e359b\", \"files\": {}}",
-        "dest": "cargo/vendor/tauri-plugin-dialog-2.6.0",
+        "contents": "{\"package\": \"a1fa4150c95ae391946cc8b8f905ab14797427caba3a8a2f79628e956da91809\", \"files\": {}}",
+        "dest": "cargo/vendor/tauri-plugin-dialog-2.7.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/tauri-plugin-fs/tauri-plugin-fs-2.4.5.crate",
-        "sha256": "ed390cc669f937afeb8b28032ce837bac8ea023d975a2e207375ec05afaf1804",
-        "dest": "cargo/vendor/tauri-plugin-fs-2.4.5"
+        "url": "https://static.crates.io/crates/tauri-plugin-fs/tauri-plugin-fs-2.5.0.crate",
+        "sha256": "36e1ec28b79f3d0683f4507e1615c36292c0ea6716668770d4396b9b39871ed8",
+        "dest": "cargo/vendor/tauri-plugin-fs-2.5.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"ed390cc669f937afeb8b28032ce837bac8ea023d975a2e207375ec05afaf1804\", \"files\": {}}",
-        "dest": "cargo/vendor/tauri-plugin-fs-2.4.5",
+        "contents": "{\"package\": \"36e1ec28b79f3d0683f4507e1615c36292c0ea6716668770d4396b9b39871ed8\", \"files\": {}}",
+        "dest": "cargo/vendor/tauri-plugin-fs-2.5.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -7724,14 +7724,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/tauri-plugin-single-instance/tauri-plugin-single-instance-2.4.0.crate",
-        "sha256": "dc61e4822b8f74d68278e09161d3e3fdd1b14b9eb781e24edccaabf10c420e8c",
-        "dest": "cargo/vendor/tauri-plugin-single-instance-2.4.0"
+        "url": "https://static.crates.io/crates/tauri-plugin-single-instance/tauri-plugin-single-instance-2.4.1.crate",
+        "sha256": "a33a5b7d78f0dec4406b003ea87c40bf928d801b6fd9323a556172c91d8712c1",
+        "dest": "cargo/vendor/tauri-plugin-single-instance-2.4.1"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"dc61e4822b8f74d68278e09161d3e3fdd1b14b9eb781e24edccaabf10c420e8c\", \"files\": {}}",
-        "dest": "cargo/vendor/tauri-plugin-single-instance-2.4.0",
+        "contents": "{\"package\": \"a33a5b7d78f0dec4406b003ea87c40bf928d801b6fd9323a556172c91d8712c1\", \"files\": {}}",
+        "dest": "cargo/vendor/tauri-plugin-single-instance-2.4.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -7971,27 +7971,27 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/tokio/tokio-1.50.0.crate",
-        "sha256": "27ad5e34374e03cfffefc301becb44e9dc3c17584f414349ebe29ed26661822d",
-        "dest": "cargo/vendor/tokio-1.50.0"
+        "url": "https://static.crates.io/crates/tokio/tokio-1.51.0.crate",
+        "sha256": "2bd1c4c0fc4a7ab90fc15ef6daaa3ec3b893f004f915f2392557ed23237820cd",
+        "dest": "cargo/vendor/tokio-1.51.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"27ad5e34374e03cfffefc301becb44e9dc3c17584f414349ebe29ed26661822d\", \"files\": {}}",
-        "dest": "cargo/vendor/tokio-1.50.0",
+        "contents": "{\"package\": \"2bd1c4c0fc4a7ab90fc15ef6daaa3ec3b893f004f915f2392557ed23237820cd\", \"files\": {}}",
+        "dest": "cargo/vendor/tokio-1.51.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/tokio-macros/tokio-macros-2.6.1.crate",
-        "sha256": "5c55a2eff8b69ce66c84f85e1da1c233edc36ceb85a2058d11b0d6a3c7e7569c",
-        "dest": "cargo/vendor/tokio-macros-2.6.1"
+        "url": "https://static.crates.io/crates/tokio-macros/tokio-macros-2.7.0.crate",
+        "sha256": "385a6cb71ab9ab790c5fe8d67f1645e6c450a7ce006a33de03daa956cf70a496",
+        "dest": "cargo/vendor/tokio-macros-2.7.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"5c55a2eff8b69ce66c84f85e1da1c233edc36ceb85a2058d11b0d6a3c7e7569c\", \"files\": {}}",
-        "dest": "cargo/vendor/tokio-macros-2.6.1",
+        "contents": "{\"package\": \"385a6cb71ab9ab790c5fe8d67f1645e6c450a7ce006a33de03daa956cf70a496\", \"files\": {}}",
+        "dest": "cargo/vendor/tokio-macros-2.7.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -10757,7 +10757,7 @@
     },
     {
         "type": "inline",
-        "contents": "[source.vendored-sources]\ndirectory = \"cargo/vendor\"\n\n[source.crates-io]\nreplace-with = \"vendored-sources\"\n\n[source.\"https://github.com/minlor/fischl-rs\"]\ngit = \"https://github.com/minlor/fischl-rs\"\nreplace-with = \"vendored-sources\"\nbranch = \"master\"\n\n[source.\"https://github.com/twintailteam/hdiffpatch-rs\"]\ngit = \"https://github.com/twintailteam/hdiffpatch-rs\"\nreplace-with = \"vendored-sources\"\nbranch = \"master\"\n\n[source.\"https://github.com/tukandev/rpcdiscord\"]\ngit = \"https://github.com/tukandev/rpcdiscord\"\nreplace-with = \"vendored-sources\"\nbranch = \"main\"\n\n[source.\"https://github.com/tukandev/zesven\"]\ngit = \"https://github.com/tukandev/zesven\"\nreplace-with = \"vendored-sources\"\nbranch = \"main\"\n",
+        "contents": "[source.vendored-sources]\ndirectory = \"cargo/vendor\"\n\n[source.crates-io]\nreplace-with = \"vendored-sources\"\n\n[source.\"https://github.com/twintailteam/fischl-rs\"]\ngit = \"https://github.com/twintailteam/fischl-rs\"\nreplace-with = \"vendored-sources\"\nbranch = \"master\"\n\n[source.\"https://github.com/twintailteam/hdiffpatch-rs\"]\ngit = \"https://github.com/twintailteam/hdiffpatch-rs\"\nreplace-with = \"vendored-sources\"\nbranch = \"master\"\n\n[source.\"https://github.com/tukandev/rpcdiscord\"]\ngit = \"https://github.com/tukandev/rpcdiscord\"\nreplace-with = \"vendored-sources\"\nbranch = \"main\"\n\n[source.\"https://github.com/tukandev/zesven\"]\ngit = \"https://github.com/tukandev/zesven\"\nreplace-with = \"vendored-sources\"\nbranch = \"main\"\n",
         "dest": "cargo",
         "dest-filename": "config"
     }
