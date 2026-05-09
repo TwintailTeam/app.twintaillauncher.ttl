@@ -1,7 +1,7 @@
 id: app.twintaillauncher.ttl
 
 runtime: org.gnome.Platform
-runtime-version: '48'
+runtime-version: '49'
 sdk: org.gnome.Sdk
 
 command: twintaillauncher
@@ -156,8 +156,8 @@ modules:
       - -Dmangoplot=disabled
     sources:
       - type: archive
-        url: https://github.com/flightlessmango/MangoHud/releases/download/v0.8.2/MangoHud-v0.8.2-Source.tar.xz
-        sha256: 9fe98da24f790f4489efc1e0c8e3ad0291c80efd882a406797d54dab82f8765b
+        url: https://github.com/flightlessmango/MangoHud/releases/download/v0.8.3/MangoHud-v0.8.3-Source.tar.xz
+        sha256: e810ac73163468533ddb7c74b681f1de4992a3d785dce294fee9933ec8956b05
     modules:
       - name: libNVCtrl
         buildsystem: simple
@@ -219,7 +219,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/TwintailTeam/TwintailLauncher.git
-        tag: ttl-v2.0.0
+        tag: ttl-v2.1.0
       - type: file
         path: app.twintaillauncher.ttl.metainfo.xml
       - node_sources.json
