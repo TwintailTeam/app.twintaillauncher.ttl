@@ -15,7 +15,7 @@
         </p>
     </description>
     <releases>
-        <release version="2.0.0" date="2026-05-10">
+        <release version="2.1.0" date="2026-05-10">
             <description>
                 <p>Release 2.1.0 with bunch of quality of life changes and debugging utilities</p>
                 <p>For further changelogs please visit github repository's latest release notes.</p>
