@@ -2,8 +2,8 @@
     {
         "type": "git",
         "url": "https://github.com/twintailteam/fischl-rs",
-        "commit": "ed315b2f5d16ade719fdac425c794e951397b97f",
-        "dest": "flatpak-cargo/git/fischl-rs-ed315b2"
+        "commit": "e442d97424d16be96b2d344f71c46e6c834c5952",
+        "dest": "flatpak-cargo/git/fischl-rs-e442d97"
     },
     {
         "type": "git",
@@ -697,6 +697,19 @@
         "type": "inline",
         "contents": "{\"package\": \"874bb8112abecc98cbd6d81ea4fa7e94fb9449648c93cc89aa40c81c24d7de03\", \"files\": {}}",
         "dest": "cargo/vendor/brotli-decompressor-5.0.0",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/bs58/bs58-0.5.1.crate",
+        "sha256": "bf88ba1141d185c399bee5288d850d63b8369520c1eafc32a0430b5b6c287bf4",
+        "dest": "cargo/vendor/bs58-0.5.1"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"bf88ba1141d185c399bee5288d850d63b8369520c1eafc32a0430b5b6c287bf4\", \"files\": {}}",
+        "dest": "cargo/vendor/bs58-0.5.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -2197,7 +2210,7 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/fischl-rs-ed315b2/.\" \"cargo/vendor/fischl\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/fischl-rs-e442d97/.\" \"cargo/vendor/fischl\""
         ]
     },
     {
@@ -2982,14 +2995,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/hashbrown/hashbrown-0.17.0.crate",
-        "sha256": "4f467dd6dccf739c208452f8014c75c18bb8301b050ad1cfb27153803edb0f51",
-        "dest": "cargo/vendor/hashbrown-0.17.0"
+        "url": "https://static.crates.io/crates/hashbrown/hashbrown-0.17.1.crate",
+        "sha256": "ed5909b6e89a2db4456e54cd5f673791d7eca6732202bbf2a9cc504fe2f9b84a",
+        "dest": "cargo/vendor/hashbrown-0.17.1"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"4f467dd6dccf739c208452f8014c75c18bb8301b050ad1cfb27153803edb0f51\", \"files\": {}}",
-        "dest": "cargo/vendor/hashbrown-0.17.0",
+        "contents": "{\"package\": \"ed5909b6e89a2db4456e54cd5f673791d7eca6732202bbf2a9cc504fe2f9b84a\", \"files\": {}}",
+        "dest": "cargo/vendor/hashbrown-0.17.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -3195,14 +3208,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/hybrid-array/hybrid-array-0.4.11.crate",
-        "sha256": "08d46837a0ed51fe95bd3b05de33cd64a1ee88fc797477ca48446872504507c5",
-        "dest": "cargo/vendor/hybrid-array-0.4.11"
+        "url": "https://static.crates.io/crates/hybrid-array/hybrid-array-0.4.12.crate",
+        "sha256": "9155a582abd142abc056962c29e3ce5ff2ad5469f4246b537ed42c5deba857da",
+        "dest": "cargo/vendor/hybrid-array-0.4.12"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"08d46837a0ed51fe95bd3b05de33cd64a1ee88fc797477ca48446872504507c5\", \"files\": {}}",
-        "dest": "cargo/vendor/hybrid-array-0.4.11",
+        "contents": "{\"package\": \"9155a582abd142abc056962c29e3ce5ff2ad5469f4246b537ed42c5deba857da\", \"files\": {}}",
+        "dest": "cargo/vendor/hybrid-array-0.4.12",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -6068,14 +6081,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/retry-policies/retry-policies-0.5.1.crate",
-        "sha256": "46a4bd6027df676bcb752d3724db0ea3c0c5fc1dd0376fec51ac7dcaf9cc69be",
-        "dest": "cargo/vendor/retry-policies-0.5.1"
+        "url": "https://static.crates.io/crates/retry-policies/retry-policies-0.5.2.crate",
+        "sha256": "dc05fbf560421a0357a750cbe78c7ca19d4923918490daabba313d5dbc871e47",
+        "dest": "cargo/vendor/retry-policies-0.5.2"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"46a4bd6027df676bcb752d3724db0ea3c0c5fc1dd0376fec51ac7dcaf9cc69be\", \"files\": {}}",
-        "dest": "cargo/vendor/retry-policies-0.5.1",
+        "contents": "{\"package\": \"dc05fbf560421a0357a750cbe78c7ca19d4923918490daabba313d5dbc871e47\", \"files\": {}}",
+        "dest": "cargo/vendor/retry-policies-0.5.2",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -6619,27 +6632,27 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/serde_with/serde_with-3.19.0.crate",
-        "sha256": "f05839ce67618e14a09b286535c0d9c94e85ef25469b0e13cb4f844e5593eb19",
-        "dest": "cargo/vendor/serde_with-3.19.0"
+        "url": "https://static.crates.io/crates/serde_with/serde_with-3.20.0.crate",
+        "sha256": "e72c1c2cb7b223fafb600a619537a871c2818583d619401b785e7c0b746ccde2",
+        "dest": "cargo/vendor/serde_with-3.20.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"f05839ce67618e14a09b286535c0d9c94e85ef25469b0e13cb4f844e5593eb19\", \"files\": {}}",
-        "dest": "cargo/vendor/serde_with-3.19.0",
+        "contents": "{\"package\": \"e72c1c2cb7b223fafb600a619537a871c2818583d619401b785e7c0b746ccde2\", \"files\": {}}",
+        "dest": "cargo/vendor/serde_with-3.20.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/serde_with_macros/serde_with_macros-3.19.0.crate",
-        "sha256": "cf2ebbe86054f9b45bc3881e865683ccfaccce97b9b4cb53f3039d67f355a334",
-        "dest": "cargo/vendor/serde_with_macros-3.19.0"
+        "url": "https://static.crates.io/crates/serde_with_macros/serde_with_macros-3.20.0.crate",
+        "sha256": "b90c488738ecb4fb0262f41f43bc40efc5868d9fb744319ddf5f5317f417bfac",
+        "dest": "cargo/vendor/serde_with_macros-3.20.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"cf2ebbe86054f9b45bc3881e865683ccfaccce97b9b4cb53f3039d67f355a334\", \"files\": {}}",
-        "dest": "cargo/vendor/serde_with_macros-3.19.0",
+        "contents": "{\"package\": \"b90c488738ecb4fb0262f41f43bc40efc5868d9fb744319ddf5f5317f417bfac\", \"files\": {}}",
+        "dest": "cargo/vendor/serde_with_macros-3.20.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
