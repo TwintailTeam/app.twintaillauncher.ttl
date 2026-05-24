@@ -6,8 +6,8 @@ sdk: org.gnome.Sdk
 
 command: twintaillauncher
 finish-args:
-  - --socket=wayland
-  - --socket=fallback-x11
+  # Keep only x11 socket thanks HSR and flatpak-builder-lint disallowing both sockets like Steam, Lutris etc could use aka no winewayland driver without tinkering
+  - --socket=x11
   # Audio access so games can have audio
   - --socket=pulseaudio
   # Controlers
@@ -79,7 +79,7 @@ finish-args:
   - --env=DBUS_FATAL_WARNINGS=0
   - --env=PROTON_DEBUG_DIR=/var/tmp
 #  - --env=XDG_CONFIG_DIRS=/etc/xdg:/usr/lib/x86_64-linux-gnu/GL:/usr/lib/i386-linux-gnu/GL
-  - --env=GST_PLUGIN_SYSTEM_PATH=/app/lib/gstreamer-1.0:/app/lib32/gstreamer-1.0:/usr/lib/extensions/gstreamer-1.0:/usr/lib/x86_64-linux-gnu/gstreamer-1.0:/usr/lib/i386-linux-gnu/gstreamer-1.0
+  - --env=GST_PLUGIN_SYSTEM_PATH=/app/lib/gstreamer-1.0:/app/lib32/gstreamer-1.0:/usr/lib/extensions/gstreamer-1.0:/usr/lib/x86_64-linux-gnu/codecs-extra/lib/gstreamer-1.0:/usr/lib/i386-linux-gnu/codecs-extra/lib/gstreamer-1.0:/usr/lib/x86_64-linux-gnu/gstreamer-1.0:/usr/lib/i386-linux-gnu/gstreamer-1.0
 
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
@@ -214,12 +214,13 @@ modules:
       - install -Dm755 src-tauri/target/release/resources/winetricks /app/lib/twintaillauncher/resources/winetricks
       - install -Dm755 src-tauri/target/release/resources/reaper /app/lib/twintaillauncher/resources/reaper
       - install -Dm644 src-tauri/target/release/resources/hkrpg_patch.dll /app/lib/twintaillauncher/resources/hkrpg_patch.dll
+      - cp -r src-tauri/target/release/resources/locales /app/lib/twintaillauncher/resources
       - install -Dm644 LICENSE /app/share/licenses/app.twintaillauncher.ttl/LICENSE
       - desktop-file-edit --set-icon=app.twintaillauncher.ttl /app/share/applications/app.twintaillauncher.ttl.desktop
     sources:
       - type: git
         url: https://github.com/TwintailTeam/TwintailLauncher.git
-        tag: ttl-v2.1.1
+        tag: ttl-v2.2.0
       - type: file
         path: app.twintaillauncher.ttl.metainfo.xml
       - node_sources.json
