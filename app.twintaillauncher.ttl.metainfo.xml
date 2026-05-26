@@ -15,9 +15,9 @@
         </p>
     </description>
     <releases>
-        <release version="2.2.0" date="2026-05-24">
+        <release version="2.2.1" date="2026-05-27">
             <description>
-                <p>improvements and fixes for stability of games</p>
+                <p>Hotfix for 2.2.0 that fixes app crashes and stability</p>
                 <p>For further changelogs please visit github repository's latest release notes.</p>
             </description>
         </release>
