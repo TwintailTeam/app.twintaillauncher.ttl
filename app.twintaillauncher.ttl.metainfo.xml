@@ -15,9 +15,9 @@
         </p>
     </description>
     <releases>
-        <release version="2.3.0" date="2026-06-15">
+        <release version="2.4.0" date="2026-07-24">
             <description>
-                <p>Release 2.3.0</p>
+                <p>Release 2.4.0</p>
                 <p>For further changelogs please visit github repository's latest release notes.</p>
             </description>
         </release>
